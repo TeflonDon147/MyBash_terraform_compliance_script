@@ -7,12 +7,12 @@ terraform {
   }
 }
 resource "random_pet" "teflon" {
-  length    = 1
-  prefix    = "MAYA"
-  separator = "-"
+  length    = var.length
+  prefix    = var.s3_name
+  separator = var.separator
 }
 
 resource "random_integer" "teflon" {
-  max = 147
-  min = 1
+  max = var.max
+  min = var.min
 }
