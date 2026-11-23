@@ -1,0 +1,735 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.17.1",
+  "planned_values": {
+    "outputs": {
+      "pet_integer": {
+        "sensitive": false,
+        "type": "number",
+        "value": 108
+      },
+      "pet_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "MAYA-sawfly"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_s3_bucket.teflon",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "teflon",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "acceleration_status": "",
+            "acl": null,
+            "arn": "arn:aws:s3:::maya-sawfly-108",
+            "bucket": "maya-sawfly-108",
+            "bucket_domain_name": "maya-sawfly-108.s3.amazonaws.com",
+            "bucket_namespace": "global",
+            "bucket_prefix": "",
+            "bucket_region": "us-east-1",
+            "bucket_regional_domain_name": "maya-sawfly-108.s3.us-east-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "grant": [
+              {
+                "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+                "permissions": [
+                  "FULL_CONTROL"
+                ],
+                "type": "CanonicalUser",
+                "uri": ""
+              }
+            ],
+            "hosted_zone_id": "Z3AQBSTGFYJSTF",
+            "id": "maya-sawfly-108",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "object_lock_enabled": false,
+            "policy": "",
+            "region": "us-east-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {
+                        "kms_master_key_id": "",
+                        "sse_algorithm": "AES256"
+                      }
+                    ],
+                    "bucket_key_enabled": false
+                  }
+                ]
+              }
+            ],
+            "tags": {
+              "Environment": "Dev",
+              "Name": "My bucket"
+            },
+            "tags_all": {
+              "Environment": "Dev",
+              "Name": "My bucket"
+            },
+            "timeouts": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "sensitive_values": {
+            "cors_rule": [],
+            "grant": [
+              {
+                "permissions": [
+                  false
+                ]
+              }
+            ],
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "replication_configuration": [],
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": {},
+            "tags_all": {},
+            "versioning": [
+              {}
+            ],
+            "website": []
+          },
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "721274598749",
+            "bucket": "maya-sawfly-108",
+            "region": "us-east-1"
+          }
+        },
+        {
+          "address": "random_integer.teflon",
+          "mode": "managed",
+          "type": "random_integer",
+          "name": "teflon",
+          "provider_name": "registry.terraform.io/hashicorp/random",
+          "schema_version": 0,
+          "values": {
+            "id": "108",
+            "keepers": null,
+            "max": 147,
+            "min": 1,
+            "result": 108,
+            "seed": null
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "random_pet.teflon",
+          "mode": "managed",
+          "type": "random_pet",
+          "name": "teflon",
+          "provider_name": "registry.terraform.io/hashicorp/random",
+          "schema_version": 0,
+          "values": {
+            "id": "MAYA-sawfly",
+            "keepers": null,
+            "length": 1,
+            "prefix": "MAYA",
+            "separator": "-"
+          },
+          "sensitive_values": {}
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.teflon",
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "teflon",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "acceleration_status": "",
+          "acl": null,
+          "arn": "arn:aws:s3:::maya-sawfly-108",
+          "bucket": "maya-sawfly-108",
+          "bucket_domain_name": "maya-sawfly-108.s3.amazonaws.com",
+          "bucket_namespace": "global",
+          "bucket_prefix": "",
+          "bucket_region": "us-east-1",
+          "bucket_regional_domain_name": "maya-sawfly-108.s3.us-east-1.amazonaws.com",
+          "cors_rule": [],
+          "force_destroy": false,
+          "grant": [
+            {
+              "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+              "permissions": [
+                "FULL_CONTROL"
+              ],
+              "type": "CanonicalUser",
+              "uri": ""
+            }
+          ],
+          "hosted_zone_id": "Z3AQBSTGFYJSTF",
+          "id": "maya-sawfly-108",
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "object_lock_enabled": false,
+          "policy": "",
+          "region": "us-east-1",
+          "replication_configuration": [],
+          "request_payer": "BucketOwner",
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {
+                      "kms_master_key_id": "",
+                      "sse_algorithm": "AES256"
+                    }
+                  ],
+                  "bucket_key_enabled": false
+                }
+              ]
+            }
+          ],
+          "tags": {
+            "Environment": "Dev",
+            "Name": "My bucket"
+          },
+          "tags_all": {
+            "Environment": "Dev",
+            "Name": "My bucket"
+          },
+          "timeouts": null,
+          "versioning": [
+            {
+              "enabled": false,
+              "mfa_delete": false
+            }
+          ],
+          "website": [],
+          "website_domain": null,
+          "website_endpoint": null
+        },
+        "after": {
+          "acceleration_status": "",
+          "acl": null,
+          "arn": "arn:aws:s3:::maya-sawfly-108",
+          "bucket": "maya-sawfly-108",
+          "bucket_domain_name": "maya-sawfly-108.s3.amazonaws.com",
+          "bucket_namespace": "global",
+          "bucket_prefix": "",
+          "bucket_region": "us-east-1",
+          "bucket_regional_domain_name": "maya-sawfly-108.s3.us-east-1.amazonaws.com",
+          "cors_rule": [],
+          "force_destroy": false,
+          "grant": [
+            {
+              "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+              "permissions": [
+                "FULL_CONTROL"
+              ],
+              "type": "CanonicalUser",
+              "uri": ""
+            }
+          ],
+          "hosted_zone_id": "Z3AQBSTGFYJSTF",
+          "id": "maya-sawfly-108",
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "object_lock_enabled": false,
+          "policy": "",
+          "region": "us-east-1",
+          "replication_configuration": [],
+          "request_payer": "BucketOwner",
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {
+                      "kms_master_key_id": "",
+                      "sse_algorithm": "AES256"
+                    }
+                  ],
+                  "bucket_key_enabled": false
+                }
+              ]
+            }
+          ],
+          "tags": {
+            "Environment": "Dev",
+            "Name": "My bucket"
+          },
+          "tags_all": {
+            "Environment": "Dev",
+            "Name": "My bucket"
+          },
+          "timeouts": null,
+          "versioning": [
+            {
+              "enabled": false,
+              "mfa_delete": false
+            }
+          ],
+          "website": [],
+          "website_domain": null,
+          "website_endpoint": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "cors_rule": [],
+          "grant": [
+            {
+              "permissions": [
+                false
+              ]
+            }
+          ],
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "replication_configuration": [],
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "tags": {},
+          "tags_all": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        },
+        "after_sensitive": {
+          "cors_rule": [],
+          "grant": [
+            {
+              "permissions": [
+                false
+              ]
+            }
+          ],
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "replication_configuration": [],
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "tags": {},
+          "tags_all": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        },
+        "before_identity": {
+          "account_id": "721274598749",
+          "bucket": "maya-sawfly-108",
+          "region": "us-east-1"
+        },
+        "after_identity": {
+          "account_id": "721274598749",
+          "bucket": "maya-sawfly-108",
+          "region": "us-east-1"
+        }
+      }
+    },
+    {
+      "address": "random_integer.teflon",
+      "mode": "managed",
+      "type": "random_integer",
+      "name": "teflon",
+      "provider_name": "registry.terraform.io/hashicorp/random",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "id": "108",
+          "keepers": null,
+          "max": 147,
+          "min": 1,
+          "result": 108,
+          "seed": null
+        },
+        "after": {
+          "id": "108",
+          "keepers": null,
+          "max": 147,
+          "min": 1,
+          "result": 108,
+          "seed": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    },
+    {
+      "address": "random_pet.teflon",
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "teflon",
+      "provider_name": "registry.terraform.io/hashicorp/random",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "id": "MAYA-sawfly",
+          "keepers": null,
+          "length": 1,
+          "prefix": "MAYA",
+          "separator": "-"
+        },
+        "after": {
+          "id": "MAYA-sawfly",
+          "keepers": null,
+          "length": 1,
+          "prefix": "MAYA",
+          "separator": "-"
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ],
+  "output_changes": {
+    "pet_integer": {
+      "actions": [
+        "no-op"
+      ],
+      "before": 108,
+      "after": 108,
+      "after_unknown": false,
+      "before_sensitive": false,
+      "after_sensitive": false
+    },
+    "pet_name": {
+      "actions": [
+        "no-op"
+      ],
+      "before": "MAYA-sawfly",
+      "after": "MAYA-sawfly",
+      "after_unknown": false,
+      "before_sensitive": false,
+      "after_sensitive": false
+    }
+  },
+  "prior_state": {
+    "format_version": "1.0",
+    "terraform_version": "1.17.1",
+    "values": {
+      "outputs": {
+        "pet_integer": {
+          "sensitive": false,
+          "value": 108,
+          "type": "number"
+        },
+        "pet_name": {
+          "sensitive": false,
+          "value": "MAYA-sawfly",
+          "type": "string"
+        }
+      },
+      "root_module": {
+        "resources": [
+          {
+            "address": "aws_s3_bucket.teflon",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "schema_version": 0,
+            "values": {
+              "acceleration_status": "",
+              "acl": null,
+              "arn": "arn:aws:s3:::maya-sawfly-108",
+              "bucket": "maya-sawfly-108",
+              "bucket_domain_name": "maya-sawfly-108.s3.amazonaws.com",
+              "bucket_namespace": "global",
+              "bucket_prefix": "",
+              "bucket_region": "us-east-1",
+              "bucket_regional_domain_name": "maya-sawfly-108.s3.us-east-1.amazonaws.com",
+              "cors_rule": [],
+              "force_destroy": false,
+              "grant": [
+                {
+                  "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+                  "permissions": [
+                    "FULL_CONTROL"
+                  ],
+                  "type": "CanonicalUser",
+                  "uri": ""
+                }
+              ],
+              "hosted_zone_id": "Z3AQBSTGFYJSTF",
+              "id": "maya-sawfly-108",
+              "lifecycle_rule": [],
+              "logging": [],
+              "object_lock_configuration": [],
+              "object_lock_enabled": false,
+              "policy": "",
+              "region": "us-east-1",
+              "replication_configuration": [],
+              "request_payer": "BucketOwner",
+              "server_side_encryption_configuration": [
+                {
+                  "rule": [
+                    {
+                      "apply_server_side_encryption_by_default": [
+                        {
+                          "kms_master_key_id": "",
+                          "sse_algorithm": "AES256"
+                        }
+                      ],
+                      "bucket_key_enabled": false
+                    }
+                  ]
+                }
+              ],
+              "tags": {
+                "Environment": "Dev",
+                "Name": "My bucket"
+              },
+              "tags_all": {
+                "Environment": "Dev",
+                "Name": "My bucket"
+              },
+              "timeouts": null,
+              "versioning": [
+                {
+                  "enabled": false,
+                  "mfa_delete": false
+                }
+              ],
+              "website": [],
+              "website_domain": null,
+              "website_endpoint": null
+            },
+            "sensitive_values": {
+              "cors_rule": [],
+              "grant": [
+                {
+                  "permissions": [
+                    false
+                  ]
+                }
+              ],
+              "lifecycle_rule": [],
+              "logging": [],
+              "object_lock_configuration": [],
+              "replication_configuration": [],
+              "server_side_encryption_configuration": [
+                {
+                  "rule": [
+                    {
+                      "apply_server_side_encryption_by_default": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "tags": {},
+              "tags_all": {},
+              "versioning": [
+                {}
+              ],
+              "website": []
+            },
+            "depends_on": [
+              "random_integer.teflon",
+              "random_pet.teflon"
+            ],
+            "identity_schema_version": 0,
+            "identity": {
+              "account_id": "721274598749",
+              "bucket": "maya-sawfly-108",
+              "region": "us-east-1"
+            }
+          },
+          {
+            "address": "random_integer.teflon",
+            "mode": "managed",
+            "type": "random_integer",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "schema_version": 0,
+            "values": {
+              "id": "108",
+              "keepers": null,
+              "max": 147,
+              "min": 1,
+              "result": 108,
+              "seed": null
+            },
+            "sensitive_values": {}
+          },
+          {
+            "address": "random_pet.teflon",
+            "mode": "managed",
+            "type": "random_pet",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "schema_version": 0,
+            "values": {
+              "id": "MAYA-sawfly",
+              "keepers": null,
+              "length": 1,
+              "prefix": "MAYA",
+              "separator": "-"
+            },
+            "sensitive_values": {}
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "full_name": "registry.terraform.io/hashicorp/aws"
+      },
+      "random": {
+        "name": "random",
+        "full_name": "registry.terraform.io/hashicorp/random",
+        "version_constraint": "3.6.3"
+      }
+    },
+    "root_module": {
+      "outputs": {
+        "pet_integer": {
+          "expression": {
+            "references": [
+              "random_integer.teflon.result",
+              "random_integer.teflon"
+            ]
+          }
+        },
+        "pet_name": {
+          "expression": {
+            "references": [
+              "random_pet.teflon.id",
+              "random_pet.teflon"
+            ]
+          }
+        }
+      },
+      "resources": [
+        {
+          "address": "aws_s3_bucket.teflon",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "teflon",
+          "provider_config_key": "aws",
+          "expressions": {
+            "bucket": {
+              "references": [
+                "random_pet.teflon.id",
+                "random_pet.teflon",
+                "random_integer.teflon.result",
+                "random_integer.teflon"
+              ]
+            },
+            "tags": {
+              "constant_value": {
+                "Environment": "Dev",
+                "Name": "My bucket"
+              }
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "random_integer.teflon",
+          "mode": "managed",
+          "type": "random_integer",
+          "name": "teflon",
+          "provider_config_key": "random",
+          "expressions": {
+            "max": {
+              "constant_value": 147
+            },
+            "min": {
+              "constant_value": 1
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "random_pet.teflon",
+          "mode": "managed",
+          "type": "random_pet",
+          "name": "teflon",
+          "provider_config_key": "random",
+          "expressions": {
+            "length": {
+              "constant_value": 1
+            },
+            "prefix": {
+              "constant_value": "MAYA"
+            },
+            "separator": {
+              "constant_value": "-"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-11-23T04:15:02Z",
+  "applyable": false,
+  "complete": true,
+  "errored": false
+}
