@@ -27,7 +27,7 @@ checkov -f prod.tfplan.json
 if [ $? -eq 0 ]
 then
   echo "success"
-  terraform apply -auto-approve
+  terraform destroy -auto-approve
   else
     echo "filed, check your work"
     exit 1

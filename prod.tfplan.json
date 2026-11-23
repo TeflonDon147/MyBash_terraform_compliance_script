@@ -5,6 +5,9 @@
     "Env": {
       "value": "dev"
     },
+    "region": {
+      "value": "us-east-1"
+    },
     "tags_name": {
       "value": "My Bucket"
     }
@@ -12,10 +15,14 @@
   "planned_values": {
     "outputs": {
       "pet_integer": {
-        "sensitive": false
+        "sensitive": false,
+        "type": "number",
+        "value": 18
       },
       "pet_name": {
-        "sensitive": false
+        "sensitive": false,
+        "type": "string",
+        "value": "MAYA-joey"
       }
     },
     "root_module": {
@@ -28,8 +35,52 @@
           "provider_name": "registry.terraform.io/hashicorp/aws",
           "schema_version": 0,
           "values": {
+            "acceleration_status": "",
+            "acl": null,
+            "arn": "arn:aws:s3:::maya-joey-18",
+            "bucket": "maya-joey-18",
+            "bucket_domain_name": "maya-joey-18.s3.amazonaws.com",
+            "bucket_namespace": "global",
+            "bucket_prefix": "",
+            "bucket_region": "us-east-1",
+            "bucket_regional_domain_name": "maya-joey-18.s3.us-east-1.amazonaws.com",
+            "cors_rule": [],
             "force_destroy": false,
+            "grant": [
+              {
+                "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+                "permissions": [
+                  "FULL_CONTROL"
+                ],
+                "type": "CanonicalUser",
+                "uri": ""
+              }
+            ],
+            "hosted_zone_id": "Z3AQBSTGFYJSTF",
+            "id": "maya-joey-18",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "object_lock_enabled": false,
+            "policy": "",
             "region": "us-east-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {
+                        "kms_master_key_id": "",
+                        "sse_algorithm": "AES256"
+                      }
+                    ],
+                    "bucket_key_enabled": false
+                  }
+                ]
+              }
+            ],
             "tags": {
               "Environment": "Dev",
               "Name": "My Bucket"
@@ -38,26 +89,53 @@
               "Environment": "Dev",
               "Name": "My Bucket"
             },
-            "timeouts": null
+            "timeouts": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
           },
           "sensitive_values": {
             "cors_rule": [],
-            "grant": [],
+            "grant": [
+              {
+                "permissions": [
+                  false
+                ]
+              }
+            ],
             "lifecycle_rule": [],
             "logging": [],
             "object_lock_configuration": [],
             "replication_configuration": [],
-            "server_side_encryption_configuration": [],
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {}
+                    ]
+                  }
+                ]
+              }
+            ],
             "tags": {},
             "tags_all": {},
-            "versioning": [],
+            "versioning": [
+              {}
+            ],
             "website": []
           },
           "identity_schema_version": 0,
           "identity": {
-            "account_id": null,
-            "bucket": null,
-            "region": null
+            "account_id": "721274598749",
+            "bucket": "maya-joey-18",
+            "region": "us-east-1"
           }
         },
         {
@@ -68,9 +146,11 @@
           "provider_name": "registry.terraform.io/hashicorp/random",
           "schema_version": 0,
           "values": {
+            "id": "18",
             "keepers": null,
             "max": 147,
             "min": 1,
+            "result": 18,
             "seed": null
           },
           "sensitive_values": {}
@@ -83,6 +163,7 @@
           "provider_name": "registry.terraform.io/hashicorp/random",
           "schema_version": 0,
           "values": {
+            "id": "MAYA-joey",
             "keepers": null,
             "length": 1,
             "prefix": "MAYA",
@@ -102,12 +183,55 @@
       "provider_name": "registry.terraform.io/hashicorp/aws",
       "change": {
         "actions": [
-          "create"
+          "no-op"
         ],
-        "before": null,
-        "after": {
+        "before": {
+          "acceleration_status": "",
+          "acl": null,
+          "arn": "arn:aws:s3:::maya-joey-18",
+          "bucket": "maya-joey-18",
+          "bucket_domain_name": "maya-joey-18.s3.amazonaws.com",
+          "bucket_namespace": "global",
+          "bucket_prefix": "",
+          "bucket_region": "us-east-1",
+          "bucket_regional_domain_name": "maya-joey-18.s3.us-east-1.amazonaws.com",
+          "cors_rule": [],
           "force_destroy": false,
+          "grant": [
+            {
+              "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+              "permissions": [
+                "FULL_CONTROL"
+              ],
+              "type": "CanonicalUser",
+              "uri": ""
+            }
+          ],
+          "hosted_zone_id": "Z3AQBSTGFYJSTF",
+          "id": "maya-joey-18",
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "object_lock_enabled": false,
+          "policy": "",
           "region": "us-east-1",
+          "replication_configuration": [],
+          "request_payer": "BucketOwner",
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {
+                      "kms_master_key_id": "",
+                      "sse_algorithm": "AES256"
+                    }
+                  ],
+                  "bucket_key_enabled": false
+                }
+              ]
+            }
+          ],
           "tags": {
             "Environment": "Dev",
             "Name": "My Bucket"
@@ -116,55 +240,155 @@
             "Environment": "Dev",
             "Name": "My Bucket"
           },
-          "timeouts": null
+          "timeouts": null,
+          "versioning": [
+            {
+              "enabled": false,
+              "mfa_delete": false
+            }
+          ],
+          "website": [],
+          "website_domain": null,
+          "website_endpoint": null
         },
-        "after_unknown": {
-          "acceleration_status": true,
-          "acl": true,
-          "arn": true,
-          "bucket": true,
-          "bucket_domain_name": true,
-          "bucket_namespace": true,
-          "bucket_prefix": true,
-          "bucket_region": true,
-          "bucket_regional_domain_name": true,
-          "cors_rule": true,
-          "grant": true,
-          "hosted_zone_id": true,
-          "id": true,
-          "lifecycle_rule": true,
-          "logging": true,
-          "object_lock_configuration": true,
-          "object_lock_enabled": true,
-          "policy": true,
-          "replication_configuration": true,
-          "request_payer": true,
-          "server_side_encryption_configuration": true,
-          "tags": {},
-          "tags_all": {},
-          "versioning": true,
-          "website": true,
-          "website_domain": true,
-          "website_endpoint": true
-        },
-        "before_sensitive": false,
-        "after_sensitive": {
+        "after": {
+          "acceleration_status": "",
+          "acl": null,
+          "arn": "arn:aws:s3:::maya-joey-18",
+          "bucket": "maya-joey-18",
+          "bucket_domain_name": "maya-joey-18.s3.amazonaws.com",
+          "bucket_namespace": "global",
+          "bucket_prefix": "",
+          "bucket_region": "us-east-1",
+          "bucket_regional_domain_name": "maya-joey-18.s3.us-east-1.amazonaws.com",
           "cors_rule": [],
-          "grant": [],
+          "force_destroy": false,
+          "grant": [
+            {
+              "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+              "permissions": [
+                "FULL_CONTROL"
+              ],
+              "type": "CanonicalUser",
+              "uri": ""
+            }
+          ],
+          "hosted_zone_id": "Z3AQBSTGFYJSTF",
+          "id": "maya-joey-18",
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "object_lock_enabled": false,
+          "policy": "",
+          "region": "us-east-1",
+          "replication_configuration": [],
+          "request_payer": "BucketOwner",
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {
+                      "kms_master_key_id": "",
+                      "sse_algorithm": "AES256"
+                    }
+                  ],
+                  "bucket_key_enabled": false
+                }
+              ]
+            }
+          ],
+          "tags": {
+            "Environment": "Dev",
+            "Name": "My Bucket"
+          },
+          "tags_all": {
+            "Environment": "Dev",
+            "Name": "My Bucket"
+          },
+          "timeouts": null,
+          "versioning": [
+            {
+              "enabled": false,
+              "mfa_delete": false
+            }
+          ],
+          "website": [],
+          "website_domain": null,
+          "website_endpoint": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "cors_rule": [],
+          "grant": [
+            {
+              "permissions": [
+                false
+              ]
+            }
+          ],
           "lifecycle_rule": [],
           "logging": [],
           "object_lock_configuration": [],
           "replication_configuration": [],
-          "server_side_encryption_configuration": [],
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
           "tags": {},
           "tags_all": {},
-          "versioning": [],
+          "versioning": [
+            {}
+          ],
           "website": []
         },
+        "after_sensitive": {
+          "cors_rule": [],
+          "grant": [
+            {
+              "permissions": [
+                false
+              ]
+            }
+          ],
+          "lifecycle_rule": [],
+          "logging": [],
+          "object_lock_configuration": [],
+          "replication_configuration": [],
+          "server_side_encryption_configuration": [
+            {
+              "rule": [
+                {
+                  "apply_server_side_encryption_by_default": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "tags": {},
+          "tags_all": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        },
+        "before_identity": {
+          "account_id": "721274598749",
+          "bucket": "maya-joey-18",
+          "region": "us-east-1"
+        },
         "after_identity": {
-          "account_id": null,
-          "bucket": null,
-          "region": null
+          "account_id": "721274598749",
+          "bucket": "maya-joey-18",
+          "region": "us-east-1"
         }
       }
     },
@@ -176,20 +400,26 @@
       "provider_name": "registry.terraform.io/hashicorp/random",
       "change": {
         "actions": [
-          "create"
+          "no-op"
         ],
-        "before": null,
-        "after": {
+        "before": {
+          "id": "18",
           "keepers": null,
           "max": 147,
           "min": 1,
+          "result": 18,
           "seed": null
         },
-        "after_unknown": {
-          "id": true,
-          "result": true
+        "after": {
+          "id": "18",
+          "keepers": null,
+          "max": 147,
+          "min": 1,
+          "result": 18,
+          "seed": null
         },
-        "before_sensitive": false,
+        "after_unknown": {},
+        "before_sensitive": {},
         "after_sensitive": {}
       }
     },
@@ -201,19 +431,24 @@
       "provider_name": "registry.terraform.io/hashicorp/random",
       "change": {
         "actions": [
-          "create"
+          "no-op"
         ],
-        "before": null,
-        "after": {
+        "before": {
+          "id": "MAYA-joey",
           "keepers": null,
           "length": 1,
           "prefix": "MAYA",
           "separator": "-"
         },
-        "after_unknown": {
-          "id": true
+        "after": {
+          "id": "MAYA-joey",
+          "keepers": null,
+          "length": 1,
+          "prefix": "MAYA",
+          "separator": "-"
         },
-        "before_sensitive": false,
+        "after_unknown": {},
+        "before_sensitive": {},
         "after_sensitive": {}
       }
     }
@@ -221,28 +456,207 @@
   "output_changes": {
     "pet_integer": {
       "actions": [
-        "create"
+        "no-op"
       ],
-      "before": null,
-      "after_unknown": true,
+      "before": 18,
+      "after": 18,
+      "after_unknown": false,
       "before_sensitive": false,
       "after_sensitive": false
     },
     "pet_name": {
       "actions": [
-        "create"
+        "no-op"
       ],
-      "before": null,
-      "after_unknown": true,
+      "before": "MAYA-joey",
+      "after": "MAYA-joey",
+      "after_unknown": false,
       "before_sensitive": false,
       "after_sensitive": false
+    }
+  },
+  "prior_state": {
+    "format_version": "1.0",
+    "terraform_version": "1.17.1",
+    "values": {
+      "outputs": {
+        "pet_integer": {
+          "sensitive": false,
+          "value": 18,
+          "type": "number"
+        },
+        "pet_name": {
+          "sensitive": false,
+          "value": "MAYA-joey",
+          "type": "string"
+        }
+      },
+      "root_module": {
+        "resources": [
+          {
+            "address": "aws_s3_bucket.teflon",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "schema_version": 0,
+            "values": {
+              "acceleration_status": "",
+              "acl": null,
+              "arn": "arn:aws:s3:::maya-joey-18",
+              "bucket": "maya-joey-18",
+              "bucket_domain_name": "maya-joey-18.s3.amazonaws.com",
+              "bucket_namespace": "global",
+              "bucket_prefix": "",
+              "bucket_region": "us-east-1",
+              "bucket_regional_domain_name": "maya-joey-18.s3.us-east-1.amazonaws.com",
+              "cors_rule": [],
+              "force_destroy": false,
+              "grant": [
+                {
+                  "id": "acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd",
+                  "permissions": [
+                    "FULL_CONTROL"
+                  ],
+                  "type": "CanonicalUser",
+                  "uri": ""
+                }
+              ],
+              "hosted_zone_id": "Z3AQBSTGFYJSTF",
+              "id": "maya-joey-18",
+              "lifecycle_rule": [],
+              "logging": [],
+              "object_lock_configuration": [],
+              "object_lock_enabled": false,
+              "policy": "",
+              "region": "us-east-1",
+              "replication_configuration": [],
+              "request_payer": "BucketOwner",
+              "server_side_encryption_configuration": [
+                {
+                  "rule": [
+                    {
+                      "apply_server_side_encryption_by_default": [
+                        {
+                          "kms_master_key_id": "",
+                          "sse_algorithm": "AES256"
+                        }
+                      ],
+                      "bucket_key_enabled": false
+                    }
+                  ]
+                }
+              ],
+              "tags": {
+                "Environment": "Dev",
+                "Name": "My Bucket"
+              },
+              "tags_all": {
+                "Environment": "Dev",
+                "Name": "My Bucket"
+              },
+              "timeouts": null,
+              "versioning": [
+                {
+                  "enabled": false,
+                  "mfa_delete": false
+                }
+              ],
+              "website": [],
+              "website_domain": null,
+              "website_endpoint": null
+            },
+            "sensitive_values": {
+              "cors_rule": [],
+              "grant": [
+                {
+                  "permissions": [
+                    false
+                  ]
+                }
+              ],
+              "lifecycle_rule": [],
+              "logging": [],
+              "object_lock_configuration": [],
+              "replication_configuration": [],
+              "server_side_encryption_configuration": [
+                {
+                  "rule": [
+                    {
+                      "apply_server_side_encryption_by_default": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "tags": {},
+              "tags_all": {},
+              "versioning": [
+                {}
+              ],
+              "website": []
+            },
+            "depends_on": [
+              "random_integer.teflon",
+              "random_pet.teflon"
+            ],
+            "identity_schema_version": 0,
+            "identity": {
+              "account_id": "721274598749",
+              "bucket": "maya-joey-18",
+              "region": "us-east-1"
+            }
+          },
+          {
+            "address": "random_integer.teflon",
+            "mode": "managed",
+            "type": "random_integer",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "schema_version": 0,
+            "values": {
+              "id": "18",
+              "keepers": null,
+              "max": 147,
+              "min": 1,
+              "result": 18,
+              "seed": null
+            },
+            "sensitive_values": {}
+          },
+          {
+            "address": "random_pet.teflon",
+            "mode": "managed",
+            "type": "random_pet",
+            "name": "teflon",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "schema_version": 0,
+            "values": {
+              "id": "MAYA-joey",
+              "keepers": null,
+              "length": 1,
+              "prefix": "MAYA",
+              "separator": "-"
+            },
+            "sensitive_values": {}
+          }
+        ]
+      }
     }
   },
   "configuration": {
     "provider_config": {
       "aws": {
         "name": "aws",
-        "full_name": "registry.terraform.io/hashicorp/aws"
+        "full_name": "registry.terraform.io/hashicorp/aws",
+        "expressions": {
+          "region": {
+            "references": [
+              "var.region"
+            ]
+          }
+        }
       },
       "random": {
         "name": "random",
@@ -333,28 +747,17 @@
         "Env": {
           "default": "dev"
         },
+        "region": {
+          "default": "us-east-1"
+        },
         "tags_name": {
           "default": "My Bucket"
         }
       }
     }
   },
-  "relevant_attributes": [
-    {
-      "resource": "random_integer.teflon",
-      "attribute": [
-        "result"
-      ]
-    },
-    {
-      "resource": "random_pet.teflon",
-      "attribute": [
-        "id"
-      ]
-    }
-  ],
-  "timestamp": "2026-11-23T10:51:19Z",
-  "applyable": true,
+  "timestamp": "2026-11-23T11:00:21Z",
+  "applyable": false,
   "complete": true,
   "errored": false
 }
