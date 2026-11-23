@@ -13311,3 +13311,909 @@
 2026-11-23T05:15:22.719+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
 2026-11-23T05:15:22.719+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=31667
 2026-11-23T05:15:22.724+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:50:41.693+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:50:41.716+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:50:41.716+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:50:41.716+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:50:41.716+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:50:41.716+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:50:41.716+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "fmt", "-recursive"}
+2026-11-23T11:50:41.716+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:50:41.716+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:50:41.717+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:50:41.718+0100 [INFO]  CLI command args: []string{"fmt", "-recursive"}
+2026-11-23T11:50:43.814+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:50:43.818+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:50:43.818+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:50:43.818+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:50:43.818+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:50:43.818+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:50:43.818+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "init"}
+2026-11-23T11:50:43.818+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:50:43.818+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:50:43.818+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:50:43.818+0100 [INFO]  CLI command args: []string{"init"}
+2026-11-23T11:50:43.826+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:50:43.827+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:50:43.827+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:50:43.827+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:50:43.828+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:50:43.837+0100 [DEBUG] checking for provisioner in "."
+2026-11-23T11:50:43.837+0100 [DEBUG] checking for provisioner in "/Users/teflondon/.config/tfenv/versions/1.17.1"
+2026-11-23T11:50:43.839+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:50:43.839+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:50:43.839+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:50:43.839+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:50:43.839+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:50:43.840+0100 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2026-11-23T11:50:44.027+0100 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2026-11-23T11:50:44.153+0100 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/random/versions
+2026-11-23T11:50:44.271+0100 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/random/3.6.3/download/darwin/arm64
+2026-11-23T11:50:44.380+0100 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-random/3.6.3/terraform-provider-random_3.6.3_SHA256SUMS
+2026-11-23T11:50:44.670+0100 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-random/3.6.3/terraform-provider-random_3.6.3_SHA256SUMS.72D7468F.sig
+2026-11-23T11:50:45.284+0100 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2026-11-23T11:50:45.462+0100 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/6.73.0/download/darwin/arm64
+2026-11-23T11:50:45.564+0100 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/6.73.0/terraform-provider-aws_6.73.0_SHA256SUMS
+2026-11-23T11:50:45.691+0100 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/6.73.0/terraform-provider-aws_6.73.0_SHA256SUMS.72D7468F.sig
+2026-11-23T11:50:52.004+0100 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2026-11-23T11:51:00.225+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:51:00.229+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:51:00.229+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:51:00.229+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:51:00.229+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:51:00.229+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:51:00.229+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "validate"}
+2026-11-23T11:51:00.229+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:51:00.230+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:51:00.230+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:51:00.231+0100 [INFO]  CLI command args: []string{"validate"}
+2026-11-23T11:51:00.241+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:00.242+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:00.242+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:00.242+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:51:00.243+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:51:00.777+0100 [DEBUG] checking for provisioner in "."
+2026-11-23T11:51:00.777+0100 [DEBUG] checking for provisioner in "/Users/teflondon/.config/tfenv/versions/1.17.1"
+2026-11-23T11:51:00.777+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:00.778+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:00.778+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:00.786+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:00.857+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41217
+2026-11-23T11:51:00.858+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:08.425+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:08.426+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:08.426+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:08.441+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:08.442+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:08.445+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:08.445+0100"
+2026-11-23T11:51:08.454+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin15954560 network=unix timestamp="2026-11-23T11:51:08.454+0100"
+2026-11-23T11:51:08.455+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:09.252+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:09.258+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41217
+2026-11-23T11:51:09.258+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:09.259+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:09.259+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:09.263+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:09.265+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41221
+2026-11-23T11:51:09.266+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:09.876+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:09.876+0100"
+2026-11-23T11:51:09.883+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin2502116066 network=unix timestamp="2026-11-23T11:51:09.883+0100"
+2026-11-23T11:51:09.883+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:09.890+0100 [DEBUG] No provider meta schema returned
+2026-11-23T11:51:09.891+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:09.891+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41221
+2026-11-23T11:51:09.891+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:09.891+0100 [DEBUG] Building and walking validate graph
+2026-11-23T11:51:09.893+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon
+2026-11-23T11:51:09.894+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:09.894+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:09.894+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [random_pet.teflon random_integer.teflon var.tags_name]
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon]
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon]
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:09.895+0100 [DEBUG] Starting graph walk: walkValidate
+2026-11-23T11:51:09.896+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:09.896+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:09.900+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:09.902+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41225
+2026-11-23T11:51:09.902+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:09.912+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:09.912+0100"
+2026-11-23T11:51:09.919+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:09.919+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin2743410463 network=unix timestamp="2026-11-23T11:51:09.919+0100"
+2026-11-23T11:51:09.924+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:09.924+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:09.927+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:09.937+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41227
+2026-11-23T11:51:09.937+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:10.130+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:10.130+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:10.130+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:10.133+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:10.133+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:10.135+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:10.135+0100"
+2026-11-23T11:51:10.141+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:10.141+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin3508280146 network=unix timestamp="2026-11-23T11:51:10.141+0100"
+2026-11-23T11:51:10.150+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:10.150+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41225
+2026-11-23T11:51:10.150+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:10.168+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:10.174+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41227
+2026-11-23T11:51:10.174+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:12.401+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:51:12.404+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:51:12.404+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:51:12.404+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:51:12.404+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:51:12.404+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:51:12.404+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "plan", "-out", "prod.tfplan"}
+2026-11-23T11:51:12.404+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:51:12.404+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:51:12.405+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:51:12.405+0100 [INFO]  CLI command args: []string{"plan", "-out", "prod.tfplan"}
+2026-11-23T11:51:12.961+0100 [DEBUG] checking for provisioner in "."
+2026-11-23T11:51:12.961+0100 [DEBUG] checking for provisioner in "/Users/teflondon/.config/tfenv/versions/1.17.1"
+2026-11-23T11:51:12.963+0100 [INFO]  backend/local: starting Plan operation
+2026-11-23T11:51:12.971+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:12.971+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:12.971+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:12.971+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:12.971+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:51:12.971+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:51:12.972+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:12.972+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:12.979+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:12.996+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41240
+2026-11-23T11:51:12.996+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:18.306+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:18.310+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:18.310+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:18.394+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:18.394+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:18.399+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:18.399+0100"
+2026-11-23T11:51:18.409+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1633738692 network=unix timestamp="2026-11-23T11:51:18.409+0100"
+2026-11-23T11:51:18.409+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:19.544+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:19.555+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41240
+2026-11-23T11:51:19.555+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:19.555+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:19.555+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:19.558+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:19.560+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41244
+2026-11-23T11:51:19.560+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:19.604+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:19.603+0100"
+2026-11-23T11:51:19.611+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:19.611+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin3595232063 network=unix timestamp="2026-11-23T11:51:19.611+0100"
+2026-11-23T11:51:19.623+0100 [DEBUG] No provider meta schema returned
+2026-11-23T11:51:19.624+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:19.624+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41244
+2026-11-23T11:51:19.624+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:19.625+0100 [DEBUG] Building and walking validate graph
+2026-11-23T11:51:19.627+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon
+2026-11-23T11:51:19.627+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:19.627+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:19.627+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:19.627+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:19.627+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:19.627+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:19.627+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:19.627+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [random_pet.teflon random_integer.teflon var.tags_name]
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon]
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon]
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:19.628+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:19.628+0100 [DEBUG] Starting graph walk: walkValidate
+2026-11-23T11:51:19.629+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:19.629+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:19.632+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:19.634+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41246
+2026-11-23T11:51:19.634+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:19.645+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:19.645+0100"
+2026-11-23T11:51:19.651+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin2257817685 network=unix timestamp="2026-11-23T11:51:19.651+0100"
+2026-11-23T11:51:19.651+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:19.656+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:19.656+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:19.659+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:19.665+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41247
+2026-11-23T11:51:19.665+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:19.885+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:19.885+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:19.885+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:19.895+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:19.895+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:19.897+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:19.896+0100"
+2026-11-23T11:51:19.903+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:19.903+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: network=unix address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1875837153 timestamp="2026-11-23T11:51:19.903+0100"
+2026-11-23T11:51:19.914+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:19.914+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41246
+2026-11-23T11:51:19.914+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:19.945+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:19.949+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41247
+2026-11-23T11:51:19.949+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:19.949+0100 [INFO]  backend/local: plan calling Plan
+2026-11-23T11:51:19.950+0100 [DEBUG] Building and walking plan graph for NormalMode
+2026-11-23T11:51:19.950+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon (expand)
+2026-11-23T11:51:19.950+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:19.950+0100 [DEBUG] ProviderTransformer: "random_pet.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:19.950+0100 [DEBUG] ProviderTransformer: "random_integer.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon (expand)]
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon (expand)" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: [random_pet.teflon (expand) random_integer.teflon (expand) var.tags_name]
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: var.tags_name
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon (expand)" references: []
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon (expand)]
+2026-11-23T11:51:19.950+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:19.950+0100 [DEBUG] Starting graph walk: walkPlan
+2026-11-23T11:51:19.951+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:19.951+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:19.953+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:19.955+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41250
+2026-11-23T11:51:19.956+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:19.966+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:19.966+0100"
+2026-11-23T11:51:19.973+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:19.973+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1094433221 network=unix timestamp="2026-11-23T11:51:19.972+0100"
+2026-11-23T11:51:19.978+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:19.978+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:19.981+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:19.988+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41251
+2026-11-23T11:51:19.988+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:20.162+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:20.162+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:20.162+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:20.165+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:20.165+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:20.167+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:20.167+0100"
+2026-11-23T11:51:20.173+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:20.173+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: network=unix address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin2582176416 timestamp="2026-11-23T11:51:20.173+0100"
+2026-11-23T11:51:20.179+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:20.180+0100 [DEBUG] Resource instance state not found for node "random_integer.teflon", instance random_integer.teflon
+2026-11-23T11:51:20.180+0100 [DEBUG] Resource instance state not found for node "random_pet.teflon", instance random_pet.teflon
+2026-11-23T11:51:20.181+0100 [DEBUG] refresh: random_integer.teflon: no state, so not refreshing
+2026-11-23T11:51:20.181+0100 [DEBUG] refresh: random_pet.teflon: no state, so not refreshing
+2026-11-23T11:51:20.183+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_req_id=6293520c-aa89-1793-8cea-b97a7ea8cd07 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer @module=sdk.framework timestamp="2026-11-23T11:51:20.183+0100"
+2026-11-23T11:51:20.184+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"result\")" tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=6293520c-aa89-1793-8cea-b97a7ea8cd07 tf_resource_type=random_integer tf_rpc=PlanResourceChange timestamp="2026-11-23T11:51:20.183+0100"
+2026-11-23T11:51:20.184+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=PlanResourceChange tf_req_id=6293520c-aa89-1793-8cea-b97a7ea8cd07 tf_resource_type=random_integer timestamp="2026-11-23T11:51:20.184+0100"
+2026-11-23T11:51:20.184+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_req_id=0ca1bd66-3f4d-7688-9074-ea38664389a4 timestamp="2026-11-23T11:51:20.184+0100"
+2026-11-23T11:51:20.184+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_req_id=0ca1bd66-3f4d-7688-9074-ea38664389a4 tf_rpc=PlanResourceChange timestamp="2026-11-23T11:51:20.184+0100"
+2026-11-23T11:51:20.186+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:20.187+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41250
+2026-11-23T11:51:20.187+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:20.254+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Configuring Terraform AWS Provider: @module=aws tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 timestamp="2026-11-23T11:51:20.253+0100"
+2026-11-23T11:51:20.255+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Resolving credentials provider: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 timestamp="2026-11-23T11:51:20.254+0100"
+2026-11-23T11:51:20.255+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:20.255+0100"
+2026-11-23T11:51:20.258+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 timestamp="2026-11-23T11:51:20.257+0100"
+2026-11-23T11:51:20.258+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved credentials: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 tf_aws.credentials_source="SharedConfigCredentials: /Users/teflondon/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:20.258+0100"
+2026-11-23T11:51:20.258+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:20.258+0100"
+2026-11-23T11:51:20.258+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving AWS account details: @module=aws tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:20.258+0100"
+2026-11-23T11:51:20.259+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base timestamp="2026-11-23T11:51:20.259+0100"
+2026-11-23T11:51:20.264+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.content_type=application/x-www-form-urlencoded http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.51.5 m/n" rpc.system.name=aws-api tf_aws.signing_region="" tf_rpc=ConfigureProvider @module=aws.aws-base aws.region=us-east-1
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105120Z http.request_content_length=43 http.request.header.amz_sdk_invocation_id=3a17eb55-caeb-4df3-b8d2-85ce9d3f214c http.url=https://sts.us-east-1.amazonaws.com/ net.peer.name=sts.us-east-1.amazonaws.com rpc.method=STS/GetCallerIdentity tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 tf_aws.sdk=aws-sdk-go-v2 tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 http.method=POST http.request.header.amz_sdk_request="attempt=1; max=25" timestamp="2026-11-23T11:51:20.264+0100"
+2026-11-23T11:51:20.893+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 tf_rpc=ConfigureProvider @module=aws.aws-base aws.region=us-east-1 http.response.header.date="Mon, 23 Nov 2026 10:51:20 GMT" rpc.method=STS/GetCallerIdentity tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.content_type=text/xml http.response_content_length=404 http.status_code=200 rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer"
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::721274598749:user/s3-user</Arn>
+  |     <UserId>AIDA*************MCHH</UserId>
+  |     <Account>721274598749</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>be8f990a-376e-447c-b520-e7fccf8cd69f</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response.header.x_amzn_requestid=be8f990a-376e-447c-b520-e7fccf8cd69f @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 http.duration=628 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzk1NDMxMDgwODQ3OlI6a3pON0NyV2Y= tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:20.893+0100"
+2026-11-23T11:51:20.895+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3af44ebf-a498-3429-df7e-7c945ca7c036 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 timestamp="2026-11-23T11:51:20.895+0100"
+2026-11-23T11:51:20.897+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:20.897+0100 [DEBUG] Resource instance state not found for node "aws_s3_bucket.teflon", instance aws_s3_bucket.teflon
+2026-11-23T11:51:20.897+0100 [DEBUG] refresh: aws_s3_bucket.teflon: no state, so not refreshing
+2026-11-23T11:51:20.931+0100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_s3_bucket.teflon, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .cors_rule: planned unknown value for non-computed block
+      - .grant: planned unknown value for non-computed block
+      - .logging: planned unknown value for non-computed block
+      - .replication_configuration: planned unknown value for non-computed block
+      - .lifecycle_rule: planned unknown value for non-computed block
+      - .object_lock_configuration: planned unknown value for non-computed block
+      - .server_side_encryption_configuration: planned unknown value for non-computed block
+      - .versioning: planned unknown value for non-computed block
+      - .website: planned unknown value for non-computed block
+2026-11-23T11:51:20.932+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:20.938+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41251
+2026-11-23T11:51:20.938+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:20.939+0100 [DEBUG] building apply graph to check for errors
+2026-11-23T11:51:20.939+0100 [DEBUG] Resource state not found for node "random_pet.teflon", instance random_pet.teflon
+2026-11-23T11:51:20.939+0100 [DEBUG] Resource state not found for node "random_integer.teflon", instance random_integer.teflon
+2026-11-23T11:51:20.939+0100 [DEBUG] Resource state not found for node "aws_s3_bucket.teflon", instance aws_s3_bucket.teflon
+2026-11-23T11:51:20.939+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon
+2026-11-23T11:51:20.939+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:20.939+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:20.939+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:20.940+0100 [DEBUG] ProviderTransformer: "random_pet.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:20.940+0100 [DEBUG] ProviderTransformer: "random_integer.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:20.940+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [var.tags_name random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon (expand) random_integer.teflon random_integer.teflon]
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon (expand)" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon (expand) random_integer.teflon random_integer.teflon]
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon (expand)" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: [var.tags_name random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon (expand) random_integer.teflon random_integer.teflon]
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: var.tags_name
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand)]
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:20.940+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:20.940+0100 [INFO]  backend/local: plan operation completed
+2026-11-23T11:51:20.940+0100 [INFO]  backend/local: writing plan output to: prod.tfplan
+2026-11-23T11:51:23.318+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:51:23.322+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:51:23.323+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:51:23.323+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:51:23.323+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:51:23.323+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:51:23.323+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "show", "-json", "prod.tfplan"}
+2026-11-23T11:51:23.323+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:51:23.323+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:51:23.323+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:51:23.323+0100 [INFO]  CLI command args: []string{"show", "-json", "prod.tfplan"}
+2026-11-23T11:51:23.325+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:23.325+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:23.325+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:23.325+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:51:23.325+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:51:23.899+0100 [DEBUG] checking for provisioner in "."
+2026-11-23T11:51:23.899+0100 [DEBUG] checking for provisioner in "/Users/teflondon/.config/tfenv/versions/1.17.1"
+2026-11-23T11:51:23.900+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:23.900+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:23.900+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:23.906+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:23.923+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41265
+2026-11-23T11:51:23.923+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:24.190+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:24.190+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:24.190+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:24.194+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:24.194+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:24.195+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:24.195+0100"
+2026-11-23T11:51:24.202+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:24.202+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin3961785412 network=unix timestamp="2026-11-23T11:51:24.202+0100"
+2026-11-23T11:51:24.974+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:24.981+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41265
+2026-11-23T11:51:24.981+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:24.981+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:24.981+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:24.984+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:24.985+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41267
+2026-11-23T11:51:24.986+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:24.995+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:24.995+0100"
+2026-11-23T11:51:25.001+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:25.001+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin622374941 network=unix timestamp="2026-11-23T11:51:25.001+0100"
+2026-11-23T11:51:25.008+0100 [DEBUG] No provider meta schema returned
+2026-11-23T11:51:25.009+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:25.009+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41267
+2026-11-23T11:51:25.009+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:29.951+0100 [INFO]  Terraform version: 1.17.1
+2026-11-23T11:51:29.955+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.112.0
+2026-11-23T11:51:29.955+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-11-23T11:51:29.956+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-11-23T11:51:29.956+0100 [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-11-23T11:51:29.956+0100 [INFO]  Go runtime version: go1.26.10
+2026-11-23T11:51:29.956+0100 [INFO]  CLI args: []string{"/Users/teflondon/.config/tfenv/versions/1.17.1/terraform", "apply", "-auto-approve"}
+2026-11-23T11:51:29.956+0100 [DEBUG] Attempting to open CLI config file: /Users/teflondon/.terraformrc
+2026-11-23T11:51:29.956+0100 [INFO]  Loading CLI configuration from /Users/teflondon/.terraformrc
+2026-11-23T11:51:29.956+0100 [DEBUG] Explicit provider installation configuration is set
+2026-11-23T11:51:29.956+0100 [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2026-11-23T11:51:30.454+0100 [DEBUG] checking for provisioner in "."
+2026-11-23T11:51:30.455+0100 [DEBUG] checking for provisioner in "/Users/teflondon/.config/tfenv/versions/1.17.1"
+2026-11-23T11:51:30.457+0100 [INFO]  backend/local: starting Apply operation
+2026-11-23T11:51:30.462+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:30.462+0100 [DEBUG] Using GOMAXPROCS=8 for policy evaluation parallelism
+2026-11-23T11:51:30.463+0100 [DEBUG] ReferenceTransformer: "" references: []
+2026-11-23T11:51:30.463+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:30.463+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:30.464+0100 [DEBUG] Starting graph walk: walkInit
+2026-11-23T11:51:30.469+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:30.469+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:30.476+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:30.491+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41290
+2026-11-23T11:51:30.491+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:30.893+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:30.893+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:30.894+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:30.974+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:30.974+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:30.981+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:30.981+0100"
+2026-11-23T11:51:30.990+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1351571010 network=unix timestamp="2026-11-23T11:51:30.990+0100"
+2026-11-23T11:51:30.990+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.034+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:32.042+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41290
+2026-11-23T11:51:32.042+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:32.042+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:32.042+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:32.045+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:32.047+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41292
+2026-11-23T11:51:32.047+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:32.058+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:32.058+0100"
+2026-11-23T11:51:32.065+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.065+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: network=unix address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin3172044244 timestamp="2026-11-23T11:51:32.065+0100"
+2026-11-23T11:51:32.071+0100 [DEBUG] No provider meta schema returned
+2026-11-23T11:51:32.072+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:32.072+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41292
+2026-11-23T11:51:32.072+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:32.073+0100 [DEBUG] Building and walking validate graph
+2026-11-23T11:51:32.074+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon
+2026-11-23T11:51:32.074+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:32.074+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:32.074+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon]
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon]
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [random_pet.teflon random_integer.teflon var.tags_name]
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:32.074+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:32.075+0100 [DEBUG] Starting graph walk: walkValidate
+2026-11-23T11:51:32.075+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:32.075+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:32.079+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:32.088+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41293
+2026-11-23T11:51:32.088+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:32.261+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:32.261+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:32.261+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:32.264+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:32.264+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:32.265+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:32.265+0100"
+2026-11-23T11:51:32.271+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.272+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin196930600 network=unix timestamp="2026-11-23T11:51:32.271+0100"
+2026-11-23T11:51:32.277+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:32.277+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:32.280+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:32.281+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41294
+2026-11-23T11:51:32.281+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:32.292+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:32.292+0100"
+2026-11-23T11:51:32.298+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.299+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin359415225 network=unix timestamp="2026-11-23T11:51:32.298+0100"
+2026-11-23T11:51:32.307+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:32.308+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41294
+2026-11-23T11:51:32.308+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:32.325+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:32.329+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41293
+2026-11-23T11:51:32.329+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:32.329+0100 [INFO]  backend/local: apply calling Plan
+2026-11-23T11:51:32.329+0100 [DEBUG] Building and walking plan graph for NormalMode
+2026-11-23T11:51:32.329+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon (expand)
+2026-11-23T11:51:32.330+0100 [DEBUG] ProviderTransformer: "random_integer.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:32.330+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:32.330+0100 [DEBUG] ProviderTransformer: "random_pet.teflon (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon (expand)" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: [random_pet.teflon (expand) random_integer.teflon (expand) var.tags_name]
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: var.tags_name
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon (expand)]
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon (expand)]
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon (expand)" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:32.330+0100 [DEBUG] Starting graph walk: walkPlan
+2026-11-23T11:51:32.330+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:32.330+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:32.333+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:32.341+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41295
+2026-11-23T11:51:32.341+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:32.509+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:32.509+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:32.509+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:32.512+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:32.512+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:32.513+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:32.513+0100"
+2026-11-23T11:51:32.520+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.520+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1777332112 network=unix timestamp="2026-11-23T11:51:32.520+0100"
+2026-11-23T11:51:32.525+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:32.525+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:32.528+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:32.530+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41296
+2026-11-23T11:51:32.530+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:32.540+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:32.540+0100"
+2026-11-23T11:51:32.546+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:32.546+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1903044322 network=unix timestamp="2026-11-23T11:51:32.546+0100"
+2026-11-23T11:51:32.552+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:32.554+0100 [DEBUG] Resource instance state not found for node "random_pet.teflon", instance random_pet.teflon
+2026-11-23T11:51:32.554+0100 [DEBUG] Resource instance state not found for node "random_integer.teflon", instance random_integer.teflon
+2026-11-23T11:51:32.555+0100 [DEBUG] refresh: random_pet.teflon: no state, so not refreshing
+2026-11-23T11:51:32.555+0100 [DEBUG] refresh: random_integer.teflon: no state, so not refreshing
+2026-11-23T11:51:32.558+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=13c8e7e0-d06e-538e-5cf9-90d722a4ae58 tf_resource_type=random_integer tf_rpc=PlanResourceChange timestamp="2026-11-23T11:51:32.557+0100"
+2026-11-23T11:51:32.558+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"result\")" tf_req_id=13c8e7e0-d06e-538e-5cf9-90d722a4ae58 tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer tf_rpc=PlanResourceChange timestamp="2026-11-23T11:51:32.557+0100"
+2026-11-23T11:51:32.558+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=d267a7dc-5d20-1b62-9198-7af961e22f93 tf_resource_type=random_pet tf_rpc=PlanResourceChange @module=sdk.framework timestamp="2026-11-23T11:51:32.557+0100"
+2026-11-23T11:51:32.558+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_req_id=13c8e7e0-d06e-538e-5cf9-90d722a4ae58 tf_rpc=PlanResourceChange tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer timestamp="2026-11-23T11:51:32.557+0100"
+2026-11-23T11:51:32.558+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=d267a7dc-5d20-1b62-9198-7af961e22f93 tf_resource_type=random_pet tf_rpc=PlanResourceChange @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" timestamp="2026-11-23T11:51:32.557+0100"
+2026-11-23T11:51:32.559+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:32.560+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41296
+2026-11-23T11:51:32.560+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:32.597+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Configuring Terraform AWS Provider: tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 @module=aws timestamp="2026-11-23T11:51:32.596+0100"
+2026-11-23T11:51:32.597+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Resolving credentials provider: @module=aws.aws-base tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:32.597+0100"
+2026-11-23T11:51:32.598+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws.aws-base tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 timestamp="2026-11-23T11:51:32.598+0100"
+2026-11-23T11:51:32.599+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:32.599+0100"
+2026-11-23T11:51:32.599+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/teflondon/.aws/credentials" timestamp="2026-11-23T11:51:32.599+0100"
+2026-11-23T11:51:32.600+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 timestamp="2026-11-23T11:51:32.599+0100"
+2026-11-23T11:51:32.600+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving AWS account details: @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:32.600+0100"
+2026-11-23T11:51:32.601+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 @module=aws.aws-base tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:32.601+0100"
+2026-11-23T11:51:32.603+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: @module=aws.aws-base aws.region=us-east-1 http.request.header.x_amz_date=20261123T105132Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.51.5 m/n" net.peer.name=sts.us-east-1.amazonaws.com rpc.method=STS/GetCallerIdentity tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 http.request.header.content_type=application/x-www-form-urlencoded http.request_content_length=43 http.url=https://sts.us-east-1.amazonaws.com/ rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.amz_sdk_invocation_id=1d2df5d6-a5b2-4e23-9295-f7482491b6c8 http.request.header.amz_sdk_request="attempt=1; max=25" tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider http.method=POST http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:32.602+0100"
+2026-11-23T11:51:33.114+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzk1NDMxMDkzMDY3OlI6VzJvQUR4dEc= http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" http.response.header.content_type=text/xml http.response_content_length=404 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 @module=aws.aws-base http.duration=510 rpc.method=STS/GetCallerIdentity tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ConfigureProvider
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::721274598749:user/s3-user</Arn>
+  |     <UserId>AIDA*************MCHH</UserId>
+  |     <Account>721274598749</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>56ccaec3-0d92-4d98-8eac-062cc6b5e465</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response.header.x_amzn_requestid=56ccaec3-0d92-4d98-8eac-062cc6b5e465 rpc.system.name=aws-api @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 aws.region=us-east-1 http.response.header.date="Mon, 23 Nov 2026 10:51:33 GMT" timestamp="2026-11-23T11:51:33.114+0100"
+2026-11-23T11:51:33.115+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved caller identity from STS: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e5089b18-223c-9b68-69f9-384b5f61cf29 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 timestamp="2026-11-23T11:51:33.115+0100"
+2026-11-23T11:51:33.117+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:33.117+0100 [DEBUG] Resource instance state not found for node "aws_s3_bucket.teflon", instance aws_s3_bucket.teflon
+2026-11-23T11:51:33.117+0100 [DEBUG] refresh: aws_s3_bucket.teflon: no state, so not refreshing
+2026-11-23T11:51:33.147+0100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_s3_bucket.teflon, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .cors_rule: planned unknown value for non-computed block
+      - .grant: planned unknown value for non-computed block
+      - .logging: planned unknown value for non-computed block
+      - .replication_configuration: planned unknown value for non-computed block
+      - .website: planned unknown value for non-computed block
+      - .lifecycle_rule: planned unknown value for non-computed block
+      - .object_lock_configuration: planned unknown value for non-computed block
+      - .server_side_encryption_configuration: planned unknown value for non-computed block
+      - .versioning: planned unknown value for non-computed block
+2026-11-23T11:51:33.147+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:33.153+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41295
+2026-11-23T11:51:33.153+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:33.153+0100 [DEBUG] building apply graph to check for errors
+2026-11-23T11:51:33.153+0100 [DEBUG] Resource state not found for node "random_pet.teflon", instance random_pet.teflon
+2026-11-23T11:51:33.153+0100 [DEBUG] Resource state not found for node "aws_s3_bucket.teflon", instance aws_s3_bucket.teflon
+2026-11-23T11:51:33.153+0100 [DEBUG] Resource state not found for node "random_integer.teflon", instance random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "random_pet.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "random_integer.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon random_integer.teflon random_integer.teflon (expand)]
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon (expand)" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon random_integer.teflon random_integer.teflon (expand) var.tags_name]
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: var.tags_name
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand)]
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon random_integer.teflon random_integer.teflon (expand) var.tags_name]
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:33.154+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon (expand)" references: []
+2026-11-23T11:51:33.253+0100 [INFO]  backend/local: apply calling Apply
+2026-11-23T11:51:33.253+0100 [DEBUG] Building and walking apply graph for NormalMode plan
+2026-11-23T11:51:33.253+0100 [DEBUG] Resource state not found for node "random_pet.teflon", instance random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] Resource state not found for node "random_integer.teflon", instance random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] Resource state not found for node "aws_s3_bucket.teflon", instance aws_s3_bucket.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/aws"], implied first by aws_s3_bucket.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "random_pet.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "random_integer.teflon (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "random_pet.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "random_integer.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ProviderTransformer: "aws_s3_bucket.teflon" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon (expand) random_integer.teflon random_integer.teflon var.tags_name]
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon (expand)" references: var.tags_name
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon (expand)" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "var.tags_name" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "var.Env" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "random_integer.teflon" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand) random_integer.teflon (expand) random_integer.teflon random_integer.teflon var.tags_name]
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "aws_s3_bucket.teflon" references: var.tags_name
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "random_pet.teflon (expand)" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: [random_pet.teflon random_pet.teflon random_pet.teflon (expand)]
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_name (expand)" references: random_pet.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: [random_integer.teflon (expand) random_integer.teflon random_integer.teflon]
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon (expand)
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "output.pet_integer (expand)" references: random_integer.teflon
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2026-11-23T11:51:33.253+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-11-23T11:51:33.254+0100 [DEBUG] Starting graph walk: walkApply
+2026-11-23T11:51:33.254+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:33.254+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:33.257+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5"]
+2026-11-23T11:51:33.258+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 pid=41298
+2026-11-23T11:51:33.259+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5
+2026-11-23T11:51:33.269+0100 [INFO]  provider.terraform-provider-random_v3.6.3_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:33.268+0100"
+2026-11-23T11:51:33.275+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:33.275+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin1719979321 network=unix timestamp="2026-11-23T11:51:33.275+0100"
+2026-11-23T11:51:33.280+0100 [DEBUG] created provider logger: level=debug
+2026-11-23T11:51:33.280+0100 [INFO]  provider: configuring client automatic mTLS
+2026-11-23T11:51:33.283+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5"]
+2026-11-23T11:51:33.293+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 pid=41299
+2026-11-23T11:51:33.293+0100 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5
+2026-11-23T11:51:33.478+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.73.0 (go1.27.4)...
+2026-11-23T11:51:33.478+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:33.478+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-11-23T11:51:33.481+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:33.481+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-11-23T11:51:33.483+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: configuring server automatic mTLS: timestamp="2026-11-23T11:51:33.482+0100"
+2026-11-23T11:51:33.489+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: plugin address: address=/var/folders/zd/b4nfw70j1n13w6kzjxkjfjpc0000gn/T/plugin4099667848 network=unix timestamp="2026-11-23T11:51:33.489+0100"
+2026-11-23T11:51:33.490+0100 [DEBUG] provider: using plugin: version=5
+2026-11-23T11:51:33.495+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/random"]
+2026-11-23T11:51:33.497+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_rpc=PlanResourceChange @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=d279305b-fd6e-0f5f-5361-7b4e88099e7b @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_resource_type=random_pet timestamp="2026-11-23T11:51:33.497+0100"
+2026-11-23T11:51:33.497+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=d279305b-fd6e-0f5f-5361-7b4e88099e7b tf_rpc=PlanResourceChange @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_resource_type=random_pet timestamp="2026-11-23T11:51:33.497+0100"
+2026-11-23T11:51:33.498+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=beccad37-bf89-12d3-8b01-6572456f31d9 tf_rpc=PlanResourceChange tf_resource_type=random_integer timestamp="2026-11-23T11:51:33.498+0100"
+2026-11-23T11:51:33.499+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_resource_type=random_integer @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_attribute_path="AttributeName(\"result\")" tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=beccad37-bf89-12d3-8b01-6572456f31d9 tf_rpc=PlanResourceChange timestamp="2026-11-23T11:51:33.498+0100"
+2026-11-23T11:51:33.499+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=beccad37-bf89-12d3-8b01-6572456f31d9 tf_resource_type=random_integer tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework timestamp="2026-11-23T11:51:33.498+0100"
+2026-11-23T11:51:33.500+0100 [DEBUG] NodeApplyableResourceInstance: invoking before actions for random_integer.teflon
+2026-11-23T11:51:33.500+0100 [DEBUG] NodeApplyableResourceInstance: invoking before actions for random_pet.teflon
+2026-11-23T11:51:33.500+0100 [INFO]  Starting apply for random_integer.teflon
+2026-11-23T11:51:33.500+0100 [INFO]  Starting apply for random_pet.teflon
+2026-11-23T11:51:33.500+0100 [DEBUG] random_integer.teflon: applying the planned Create change
+2026-11-23T11:51:33.501+0100 [DEBUG] random_pet.teflon: applying the planned Create change
+2026-11-23T11:51:33.502+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Value switched to prior value due to semantic equality logic: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_attribute_path=min tf_req_id=05a15960-208a-1e72-57c9-167a503c446f timestamp="2026-11-23T11:51:33.501+0100"
+2026-11-23T11:51:33.502+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Value switched to prior value due to semantic equality logic: @module=sdk.framework tf_req_id=05a15960-208a-1e72-57c9-167a503c446f tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 tf_attribute_path=max tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer timestamp="2026-11-23T11:51:33.501+0100"
+2026-11-23T11:51:33.502+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Value switched to prior value due to semantic equality logic: tf_attribute_path=length tf_req_id=1bb017e7-76bf-7785-3cdd-162e070efefc tf_resource_type=random_pet tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp="2026-11-23T11:51:33.502+0100"
+2026-11-23T11:51:33.502+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Value switched to prior value due to semantic equality logic: tf_resource_type=random_pet tf_rpc=ApplyResourceChange tf_provider_addr=registry.terraform.io/hashicorp/random @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_attribute_path=prefix tf_req_id=1bb017e7-76bf-7785-3cdd-162e070efefc timestamp="2026-11-23T11:51:33.502+0100"
+2026-11-23T11:51:33.502+0100 [DEBUG] provider.terraform-provider-random_v3.6.3_x5: Value switched to prior value due to semantic equality logic: @module=sdk.framework tf_req_id=1bb017e7-76bf-7785-3cdd-162e070efefc tf_rpc=ApplyResourceChange tf_attribute_path=separator tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 timestamp="2026-11-23T11:51:33.502+0100"
+2026-11-23T11:51:33.522+0100 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2026-11-23T11:51:33.527+0100 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2026-11-23T11:51:33.528+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:33.529+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_arm64/terraform-provider-random_v3.6.3_x5 id=41298
+2026-11-23T11:51:33.529+0100 [DEBUG] provider: plugin exited
+2026-11-23T11:51:33.570+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Configuring Terraform AWS Provider: tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 @module=aws timestamp="2026-11-23T11:51:33.570+0100"
+2026-11-23T11:51:33.571+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Resolving credentials provider: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:33.571+0100"
+2026-11-23T11:51:33.571+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:33.571+0100"
+2026-11-23T11:51:33.571+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:33.571+0100"
+2026-11-23T11:51:33.572+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved credentials: tf_aws.credentials_source="SharedConfigCredentials: /Users/teflondon/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 @module=aws.aws-base timestamp="2026-11-23T11:51:33.572+0100"
+2026-11-23T11:51:33.572+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Loading configuration: tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:33.572+0100"
+2026-11-23T11:51:33.572+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving AWS account details: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:33.572+0100"
+2026-11-23T11:51:33.572+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: Retrieving caller identity from STS: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 timestamp="2026-11-23T11:51:33.572+0100"
+2026-11-23T11:51:33.572+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.method=POST http.url=https://sts.us-east-1.amazonaws.com/ rpc.method=STS/GetCallerIdentity tf_provider_addr=registry.terraform.io/hashicorp/aws aws.region=us-east-1 http.request.header.amz_sdk_invocation_id=da36e609-7135-4cc8-b8ee-396fb6c1684d http.request.header.amz_sdk_request="attempt=1; max=25" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded net.peer.name=sts.us-east-1.amazonaws.com rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.x_amz_date=20261123T105133Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.51.5 m/n" http.request_content_length=43 @module=aws.aws-base timestamp="2026-11-23T11:51:33.572+0100"
+2026-11-23T11:51:34.044+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: @module=aws.aws-base
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::721274598749:user/s3-user</Arn>
+  |     <UserId>AIDA*************MCHH</UserId>
+  |     <Account>721274598749</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>5e97aa9a-b205-4a5d-a856-c27866a09d49</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response_content_length=404 http.status_code=200 rpc.method=STS/GetCallerIdentity tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:54 http.response.header.date="Mon, 23 Nov 2026 10:51:34 GMT" rpc.system.name=aws-api tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 aws.region=us-east-1 http.duration=471 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzk1NDMxMDkzOTk5OlI6aG9vSWFIWEc= http.response.header.x_amzn_requestid=5e97aa9a-b205-4a5d-a856-c27866a09d49 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.content_type=text/xml tf_aws.sdk=aws-sdk-go-v2 timestamp="2026-11-23T11:51:34.044+0100"
+2026-11-23T11:51:34.044+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:46 tf_req_id=f4bc4a3a-9368-1d0a-bc41-241fedcefe13 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2026-11-23T11:51:34.044+0100"
+2026-11-23T11:51:34.045+0100 [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/aws"]
+2026-11-23T11:51:34.082+0100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_s3_bucket.teflon, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .lifecycle_rule: planned unknown value for non-computed block
+      - .object_lock_configuration: planned unknown value for non-computed block
+      - .server_side_encryption_configuration: planned unknown value for non-computed block
+      - .versioning: planned unknown value for non-computed block
+      - .cors_rule: planned unknown value for non-computed block
+      - .grant: planned unknown value for non-computed block
+      - .logging: planned unknown value for non-computed block
+      - .replication_configuration: planned unknown value for non-computed block
+      - .website: planned unknown value for non-computed block
+2026-11-23T11:51:34.082+0100 [DEBUG] NodeApplyableResourceInstance: invoking before actions for aws_s3_bucket.teflon
+2026-11-23T11:51:34.082+0100 [INFO]  Starting apply for aws_s3_bucket.teflon
+2026-11-23T11:51:34.083+0100 [DEBUG] aws_s3_bucket.teflon: applying the planned Create change
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "object_lock_configuration" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "server_side_encryption_configuration" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "lifecycle_rule" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "logging" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "replication_configuration" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "versioning" from ComputedKeys
+2026-11-23T11:51:34.083+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "grant" from ComputedKeys
+2026-11-23T11:51:34.084+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "website" from ComputedKeys
+2026-11-23T11:51:34.084+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: [DEBUG] setting computed for "cors_rule" from ComputedKeys
+2026-11-23T11:51:34.087+0100 [INFO]  provider.terraform-provider-aws_v6.73.0_x5: overriding region: tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @module=aws tf_aws.service_package=s3 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/terraform-provider-aws/internal/service/s3/service_package.go:53 original_region=us-east-1 override_region=aws-global tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:34.086+0100"
+2026-11-23T11:51:34.090+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105134Z tf_aws.signing_region="" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.method=HEAD net.peer.name=maya-joey-18.s3.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.body="" http.request.header.accept_encoding=identity http.request.header.amz_sdk_invocation_id=5b3cf0ee-d052-4a04-8d41-2e8c9a6bc905 http.request.header.amz_sdk_request="attempt=1; max=25" http.url=https://maya-joey-18.s3.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_aws.sdk=aws-sdk-go-v2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws aws.region=aws-global aws.s3.bucket=maya-joey-18 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" rpc.method=S3/HeadBucket rpc.system.name=aws-api timestamp="2026-11-23T11:51:34.090+0100"
+2026-11-23T11:51:34.540+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global aws.s3.bucket=maya-joey-18 http.response.header.content_type=application/xml @module=aws http.duration=450 tf_rpc=ApplyResourceChange http.response.header.date="Mon, 23 Nov 2026 10:51:34 GMT" http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=10EC5Z04TEJ006TT tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" http.response.body="" http.response.header.x_amz_id_2="rCm/iMWKZ9VC4nBU+CSnpRRxNmf0fMfGWj0CaoHA4F2judkpTmnCDsMDCtSncKCBENgr/rky/wA=" http.status_code=404 rpc.method=S3/HeadBucket rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket timestamp="2026-11-23T11:51:34.540+0100"
+2026-11-23T11:51:34.541+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: 10EC5Z04TEJ006TT, HostID: rCm/iMWKZ9VC4nBU+CSnpRRxNmf0fMfGWj0CaoHA4F2judkpTmnCDsMDCtSncKCBENgr/rky/wA=, NotFound: : tf_resource_type=aws_s3_bucket @module=aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 aws.s3.bucket=maya-joey-18 rpc.method=S3/HeadBucket rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global tf_aws.sdk=aws-sdk-go-v2 timestamp="2026-11-23T11:51:34.541+0100"
+2026-11-23T11:51:34.543+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.x_amz_date=20261123T105134Z tf_mux_provider="*schema.GRPCProviderServer" http.request_content_length=217 tf_rpc=ApplyResourceChange tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_content_sha256=0e69e920394ae7d0311b74f9cebe0e5171a97e1fa34b886b985c62671ff276f0 net.peer.name=maya-joey-18.s3.amazonaws.com aws.s3.bucket=maya-joey-18 http.request.header.content_type=application/xml http.request.header.x_amz_acl=private http.method=PUT http.url=https://maya-joey-18.s3.amazonaws.com/ rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_resource_type=aws_s3_bucket @module=aws http.request.header.amz_sdk_invocation_id=3f284f07-4510-4113-b8aa-d568c7606303 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/CreateBucket tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 aws.region=aws-global
+  http.request.body=
+  | <CreateBucketConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Tags><Tag><Key>Name</Key><Value>My Bucket</Value></Tag><Tag><Key>Environment</Key><Value>Dev</Value></Tag></Tags></CreateBucketConfiguration>
+   http.request.header.accept_encoding=identity timestamp="2026-11-23T11:51:34.543+0100"
+2026-11-23T11:51:34.911+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: rpc.method=S3/CreateBucket rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.response.header.x_amz_bucket_arn=arn:aws:s3:::maya-joey-18 http.duration=367 http.response.body="" http.response.header.date="Mon, 23 Nov 2026 10:51:35 GMT" http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global tf_resource_type=aws_s3_bucket http.response.header.server=AmazonS3 http.response.header.x_amz_id_2="ooGc5OZUtN+RXwJpDZ1rHsr8KpJ4R03rshvOJagYEcYhlNoUWWHqS8upLE+Otg2WKNrDLOjzIFI=" @module=aws aws.s3.bucket=maya-joey-18 http.response.header.location=/maya-joey-18 http.response.header.x_amz_request_id=10E5AY8GBWEHTQDE timestamp="2026-11-23T11:51:34.910+0100"
+2026-11-23T11:51:34.912+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105135Z tf_resource_type=aws_s3_bucket @module=aws aws.region=aws-global http.request.header.amz_sdk_invocation_id=9d62aa79-415b-474a-a3ad-9ef080de8d6d http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 rpc.method=S3/HeadBucket rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.body="" http.request.header.accept_encoding=identity tf_aws.signing_region="" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange aws.s3.bucket=maya-joey-18 http.method=HEAD http.url=https://maya-joey-18.s3.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" net.peer.name=maya-joey-18.s3.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.header.amz_sdk_request="attempt=1; max=25" timestamp="2026-11-23T11:51:34.912+0100"
+2026-11-23T11:51:35.053+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.duration=140 http.response.body="" http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.server=AmazonS3 rpc.method=S3/HeadBucket tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @module=aws aws.region=aws-global aws.s3.bucket=maya-joey-18 http.response.header.x_amz_request_id=SWHVMDD8VJQ5BZ4J rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange http.response.header.x_amz_bucket_arn=arn:aws:s3:::maya-joey-18 http.response.header.content_type=application/xml http.response.header.x_amz_access_point_alias=false http.response.header.x_amz_bucket_region=us-east-1 http.response.header.x_amz_id_2="6IVWcbaQbCf4jHtNn7mLZY+EWYF0kOpVl0biCWa1lFJnOGv1FGz3hYrEqgvtGoD1yDlqmhPnkKo=" http.status_code=200 tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket timestamp="2026-11-23T11:51:35.053+0100"
+2026-11-23T11:51:35.055+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws aws.region=aws-global http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" aws.s3.bucket=maya-joey-18 net.peer.name=maya-joey-18.s3.amazonaws.com tf_aws.signing_region="" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.method=HEAD http.request.body="" http.request.header.amz_sdk_invocation_id=9253773c-53af-4de9-84e0-291deb889044 http.request.header.x_amz_date=20261123T105136Z http.url=https://maya-joey-18.s3.amazonaws.com/ rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.header.accept_encoding=identity http.request.header.amz_sdk_request="attempt=1; max=25" rpc.method=S3/HeadBucket tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange timestamp="2026-11-23T11:51:35.055+0100"
+2026-11-23T11:51:35.191+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.response.body="" http.response.header.x_amz_bucket_region=us-east-1 http.response.header.x_amz_id_2="XADEASzQY72+LX2OMBvA9+pQhNKp+rRk3mRmNYLNv6GYN14UrA3aBFEuVQ0mw6OuhTuXJhOe5zM=" http.response.header.x_amz_request_id=SWHT7PD6C1P5TTZF http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" aws.s3.bucket=maya-joey-18 http.response.header.x_amz_access_point_alias=false http.response.header.x_amz_bucket_arn=arn:aws:s3:::maya-joey-18 tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @module=aws aws.region=aws-global http.duration=135 http.response.header.content_type=application/xml tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.server=AmazonS3 rpc.method=S3/HeadBucket rpc.system.name=aws-api timestamp="2026-11-23T11:51:35.191+0100"
+2026-11-23T11:51:35.193+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.x_amz_date=20261123T105136Z http.url=https://maya-joey-18.s3.amazonaws.com/?policy= http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" net.peer.name=maya-joey-18.s3.amazonaws.com rpc.system.name=aws-api tf_aws.signing_region="" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.header.amz_sdk_invocation_id=6df1ec11-982a-4ff7-beb4-ec6a58d4ef24 http.request.header.amz_sdk_request="attempt=1; max=25" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws http.request.header.accept_encoding=identity rpc.method=S3/GetBucketPolicy tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange aws.region=aws-global http.method=GET http.request.body="" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 tf_aws.sdk=aws-sdk-go-v2 timestamp="2026-11-23T11:51:35.193+0100"
+2026-11-23T11:51:35.336+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: aws.region=aws-global http.duration=142
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Error><Code>NoSuchBucketPolicy</Code><Message>The bucket policy does not exist</Message><BucketName>maya-joey-18</BucketName><RequestId>SWHMPR5PYTZWJ2E1</RequestId><HostId>C4CnxrEQsPUwiaVJOZ61f+9LN00xRMrWqWnKEI3PBB5Z8NG63sanuFZWtZ/mi+rJG+K0qVt488s=</HostId></Error>
+   tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.date="Mon, 23 Nov 2026 10:51:34 GMT" http.response.header.x_amz_id_2="C4CnxrEQsPUwiaVJOZ61f+9LN00xRMrWqWnKEI3PBB5Z8NG63sanuFZWtZ/mi+rJG+K0qVt488s=" http.status_code=404 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.response.header.content_type=application/xml rpc.method=S3/GetBucketPolicy @module=aws http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=SWHMPR5PYTZWJ2E1 rpc.system.name=aws-api tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket timestamp="2026-11-23T11:51:35.335+0100"
+2026-11-23T11:51:35.336+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: SWHMPR5PYTZWJ2E1, HostID: C4CnxrEQsPUwiaVJOZ61f+9LN00xRMrWqWnKEI3PBB5Z8NG63sanuFZWtZ/mi+rJG+K0qVt488s=, api error NoSuchBucketPolicy: The bucket policy does not exist: tf_resource_type=aws_s3_bucket @module=aws tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global rpc.method=S3/GetBucketPolicy rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:35.336+0100"
+2026-11-23T11:51:35.337+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.body="" http.request.header.accept_encoding=identity http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" rpc.method=S3/GetBucketAcl rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 @module=aws net.peer.name=maya-joey-18.s3.amazonaws.com tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_s3_bucket aws.region=aws-global http.request.header.amz_sdk_invocation_id=81bb6cd3-8114-4075-8105-5701d545ee9e http.request.header.amz_sdk_request="attempt=1; max=25" http.url=https://maya-joey-18.s3.amazonaws.com/?acl= http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.method=GET http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105134Z tf_rpc=ApplyResourceChange timestamp="2026-11-23T11:51:35.337+0100"
+2026-11-23T11:51:35.477+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws aws.region=aws-global http.response.header.content_type=application/xml http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.x_amz_id_2=jDg1vwuXJTqsE3GpcxkGeweTa3MihDP2qlSxQuRbp7Jn1Zg248jIByXysVfsxI5iszlOVVWJJi4= rpc.method=S3/GetBucketAcl http.response.header.x_amz_request_id=SWHJWN86HNVJ5ZR4 tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange http.duration=138
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd</ID></Owner><AccessControlList><Grant><Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser"><ID>acc82ed22d33af42581f7ffe6d52cb0823894db11339c0d237eadecce07967dd</ID></Grantee><Permission>FULL_CONTROL</Permission></Grant></AccessControlList></AccessControlPolicy>
+   http.response.header.server=AmazonS3 http.status_code=200 rpc.system.name=aws-api tf_aws.signing_region="" tf_resource_type=aws_s3_bucket timestamp="2026-11-23T11:51:35.477+0100"
+2026-11-23T11:51:35.479+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: net.peer.name=maya-joey-18.s3.amazonaws.com tf_aws.signing_region="" http.request.header.amz_sdk_invocation_id=0eebbdec-5eff-40b4-809f-cf5bc0544e1e http.request.header.amz_sdk_request="attempt=1; max=25" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/GetBucketCors tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.request.header.accept_encoding=identity http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws aws.region=aws-global http.method=GET rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 http.request.body="" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105136Z http.url=https://maya-joey-18.s3.amazonaws.com/?cors= timestamp="2026-11-23T11:51:35.479+0100"
+2026-11-23T11:51:35.612+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_resource_type=aws_s3_bucket
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Error><Code>NoSuchCORSConfiguration</Code><Message>The CORS configuration does not exist</Message><BucketName>maya-joey-18</BucketName><RequestId>SWHY2F45767JSDN6</RequestId><HostId>eKEpb0Kzs5x+vPhHLVg2rbRGpeNJ5sXaoRro1uz966fU/wUVO6bqrwRMOXD7DQOmpYd8FL4LT+k=</HostId></Error>
+   http.response.header.date="Mon, 23 Nov 2026 10:51:35 GMT" rpc.method=S3/GetBucketCors tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange @module=aws http.response.header.server=AmazonS3 http.response.header.x_amz_id_2="eKEpb0Kzs5x+vPhHLVg2rbRGpeNJ5sXaoRro1uz966fU/wUVO6bqrwRMOXD7DQOmpYd8FL4LT+k=" tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.duration=133 http.response.header.content_type=application/xml http.status_code=404 tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global http.response.header.x_amz_request_id=SWHY2F45767JSDN6 rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:35.612+0100"
+2026-11-23T11:51:35.612+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: SWHY2F45767JSDN6, HostID: eKEpb0Kzs5x+vPhHLVg2rbRGpeNJ5sXaoRro1uz966fU/wUVO6bqrwRMOXD7DQOmpYd8FL4LT+k=, api error NoSuchCORSConfiguration: The CORS configuration does not exist: rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @module=aws aws.region=aws-global rpc.method=S3/GetBucketCors tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 timestamp="2026-11-23T11:51:35.612+0100"
+2026-11-23T11:51:35.613+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.amz_sdk_invocation_id=fa4328f0-2d94-47bf-a828-e818d216a36f http.request.header.x_amz_date=20261123T105135Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/GetBucketWebsite rpc.system.name=aws-api tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket aws.region=aws-global http.method=GET http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.url=https://maya-joey-18.s3.amazonaws.com/?website= tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.body="" http.request.header.accept_encoding=identity http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 net.peer.name=maya-joey-18.s3.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws tf_rpc=ApplyResourceChange timestamp="2026-11-23T11:51:35.613+0100"
+2026-11-23T11:51:35.764+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.response.header.x_amz_id_2="+REJhY8iydwr76/78f1u1SbHUgyVEqn6/IbjW4R3R//mdUQ3evNiD+X+1Z/w1sx7CP8+yj+AbGc=" @module=aws aws.region=aws-global
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Error><Code>NoSuchWebsiteConfiguration</Code><Message>The specified bucket does not have a website configuration</Message><BucketName>maya-joey-18</BucketName><RequestId>SWHN59YBT8V9TZZY</RequestId><HostId>+REJhY8iydwr76/78f1u1SbHUgyVEqn6/IbjW4R3R//mdUQ3evNiD+X+1Z/w1sx7CP8+yj+AbGc=</HostId></Error>
+   http.response.header.date="Mon, 23 Nov 2026 10:51:35 GMT" tf_aws.sdk=aws-sdk-go-v2 http.response.header.content_type=application/xml rpc.system.name=aws-api tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.response.header.x_amz_request_id=SWHN59YBT8V9TZZY @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.response.header.server=AmazonS3 rpc.method=S3/GetBucketWebsite tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.duration=150 http.status_code=404 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:35.763+0100"
+2026-11-23T11:51:35.764+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: SWHN59YBT8V9TZZY, HostID: +REJhY8iydwr76/78f1u1SbHUgyVEqn6/IbjW4R3R//mdUQ3evNiD+X+1Z/w1sx7CP8+yj+AbGc=, api error NoSuchWebsiteConfiguration: The specified bucket does not have a website configuration: aws.region=aws-global rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 rpc.method=S3/GetBucketWebsite tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @module=aws timestamp="2026-11-23T11:51:35.764+0100"
+2026-11-23T11:51:35.764+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.body="" http.url=https://maya-joey-18.s3.amazonaws.com/?versioning= tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.request.header.accept_encoding=identity http.request.header.amz_sdk_invocation_id=96863fe6-7f44-478d-84ce-e45b78337319 http.request.header.amz_sdk_request="attempt=1; max=25" net.peer.name=maya-joey-18.s3.amazonaws.com rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws aws.region=aws-global http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105135Z rpc.method=S3/GetBucketVersioning tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" @module=aws http.method=GET timestamp="2026-11-23T11:51:35.764+0100"
+2026-11-23T11:51:35.895+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"/>
+   http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.server=AmazonS3 tf_mux_provider="*schema.GRPCProviderServer" aws.region=aws-global tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_resource_type=aws_s3_bucket @module=aws http.response.header.x_amz_request_id=SWHKMJPGGZSJYN4N rpc.method=S3/GetBucketVersioning rpc.system.name=aws-api tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.duration=130 http.response.header.x_amz_id_2="hnrQ2lAtS12ErsZ2bHNlaxqemqmI5Z54P+DxYDoB5qXYIOqKXU/NQnkJw1AjoGcGGq/gxUKY8IM=" http.status_code=200 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:35.895+0100"
+2026-11-23T11:51:35.896+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.header.amz_sdk_invocation_id=062c453b-bbef-47c3-8088-89310ca1c87d http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105136Z rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" aws.region=aws-global http.method=GET http.url=https://maya-joey-18.s3.amazonaws.com/?accelerate= tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" net.peer.name=maya-joey-18.s3.amazonaws.com tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.body="" http.request.header.accept_encoding=identity http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/GetBucketAccelerateConfiguration tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange @module=aws timestamp="2026-11-23T11:51:35.895+0100"
+2026-11-23T11:51:36.040+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.status_code=200 rpc.method=S3/GetBucketAccelerateConfiguration tf_aws.sdk=aws-sdk-go-v2 aws.region=aws-global http.duration=144
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <AccelerateConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"/>
+   http.response.header.x_amz_request_id=SWHJ3CBZHGV6KJ2W tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.response.header.x_amz_id_2=UXx8lK9ElP5QHs1zJnBpqDskTETi0u2iJR4kNbBcMWnE138RJwxDS9TGUtp75qQOgCQAWO4J1os= rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.server=AmazonS3 tf_aws.signing_region="" tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange timestamp="2026-11-23T11:51:36.040+0100"
+2026-11-23T11:51:36.041+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket http.method=GET http.request.header.accept_encoding=identity http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" tf_mux_provider="*schema.GRPCProviderServer" http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ApplyResourceChange @module=aws aws.region=aws-global http.request.body="" http.request.header.amz_sdk_invocation_id=b6e3c30e-0eb3-419f-960f-51957eb38dd8 http.request.header.x_amz_date=20261123T105136Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.url=https://maya-joey-18.s3.amazonaws.com/?requestPayment= net.peer.name=maya-joey-18.s3.amazonaws.com rpc.method=S3/GetBucketRequestPayment rpc.system.name=aws-api timestamp="2026-11-23T11:51:36.040+0100"
+2026-11-23T11:51:36.176+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <RequestPaymentConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Payer>BucketOwner</Payer></RequestPaymentConfiguration>
+   rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.response.header.x_amz_id_2="ffmBv+5hUtfvouBtS1CC3EMUj7caTGBVFjQDCu8nLd+Y5jrWnQMPWUrQiwIvzV1LGVByE+BUk/E=" http.status_code=200 rpc.method=S3/GetBucketRequestPayment tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @module=aws aws.region=aws-global http.duration=134 http.response.header.date="Mon, 23 Nov 2026 10:51:37 GMT" http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=2CQCP6E0T0MYX8PV tf_aws.signing_region="" timestamp="2026-11-23T11:51:36.175+0100"
+2026-11-23T11:51:36.184+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: tf_aws.signing_region="" http.request.body="" http.request.header.amz_sdk_invocation_id=6d8fec80-f22d-481a-ba41-bfef6def9de0 tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ApplyResourceChange http.request.header.accept_encoding=identity http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.url=https://maya-joey-18.s3.amazonaws.com/?logging= rpc.method=S3/GetBucketLogging rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @module=aws aws.region=aws-global http.method=GET http.request.header.x_amz_date=20261123T105137Z net.peer.name=maya-joey-18.s3.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" timestamp="2026-11-23T11:51:36.176+0100"
+2026-11-23T11:51:36.320+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.response.header.content_type=application/xml http.response.header.x_amz_id_2="TDp1XD70U4AR2Ug2TOZEvv/Hcphw4mlfFp1sPQdDRLmv3UOSfNdMd2kloCCaDo+B7Ikw557WOd0=" rpc.system.name=aws-api tf_resource_type=aws_s3_bucket @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.duration=143 http.response.header.date="Mon, 23 Nov 2026 10:51:37 GMT" http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=2CQ07K6EKENRJFWA tf_aws.sdk=aws-sdk-go-v2 aws.region=aws-global rpc.method=S3/GetBucketLogging tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.status_code=200 tf_rpc=ApplyResourceChange
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | 
+  | <BucketLoggingStatus xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+  |   <!--<LoggingEnabled><TargetBucket>myLogsBucket</TargetBucket><TargetPrefix>add/this/prefix/to/my/log/files/access_log-</TargetPrefix></LoggingEnabled>-->
+  | </BucketLoggingStatus>
+   timestamp="2026-11-23T11:51:36.320+0100"
+2026-11-23T11:51:36.321+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 net.peer.name=maya-joey-18.s3.amazonaws.com tf_aws.signing_region="" tf_resource_type=aws_s3_bucket http.request.header.amz_sdk_invocation_id=85e8fcbb-8e73-4013-8a28-1d52fbc6d034 http.url=https://maya-joey-18.s3.amazonaws.com/?lifecycle= tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105137Z @module=aws http.method=GET http.request.body="" http.request.header.accept_encoding=identity http.request.header.amz_sdk_request="attempt=1; max=25" aws.region=aws-global http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/GetBucketLifecycleConfiguration timestamp="2026-11-23T11:51:36.321+0100"
+2026-11-23T11:51:36.466+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.response.header.date="Mon, 23 Nov 2026 10:51:37 GMT" http.response.header.x_amz_request_id=2CQ7XJQX8TY21BZC http.response_content_length=286 http.status_code=404 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer"
+  http.response.body=
+  | <Error><Code>NoSuchLifecycleConfiguration</Code><Message>The lifecycle configuration does not exist</Message><BucketName>maya-joey-18</BucketName><RequestId>2CQ7XJQX8TY21BZC</RequestId><HostId>+A3D3uoeZnxSYQD4fCkhVF0nhkXX1PFUq1qFvF1ZqBKTSDic7txZ8rmqq2ghyLHk6NM6JDj/8rQ=</HostId></Error>
+   http.response.header.content_type=application/xml http.response.header.server=AmazonS3 rpc.method=S3/GetBucketLifecycleConfiguration rpc.system.name=aws-api tf_resource_type=aws_s3_bucket @module=aws http.duration=144 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange aws.region=aws-global http.response.header.x_amz_id_2="+A3D3uoeZnxSYQD4fCkhVF0nhkXX1PFUq1qFvF1ZqBKTSDic7txZ8rmqq2ghyLHk6NM6JDj/8rQ=" timestamp="2026-11-23T11:51:36.465+0100"
+2026-11-23T11:51:36.466+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: 2CQ7XJQX8TY21BZC, HostID: +A3D3uoeZnxSYQD4fCkhVF0nhkXX1PFUq1qFvF1ZqBKTSDic7txZ8rmqq2ghyLHk6NM6JDj/8rQ=, api error NoSuchLifecycleConfiguration: The lifecycle configuration does not exist: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws tf_aws.sdk=aws-sdk-go-v2 tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket aws.region=aws-global rpc.method=S3/GetBucketLifecycleConfiguration rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange timestamp="2026-11-23T11:51:36.466+0100"
+2026-11-23T11:51:36.466+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.body="" http.request.header.amz_sdk_request="attempt=1; max=25" http.url=https://maya-joey-18.s3.amazonaws.com/?replication= http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_mux_provider="*schema.GRPCProviderServer" aws.region=aws-global http.method=GET http.request.header.amz_sdk_invocation_id=9c0aaf9d-40b0-42d4-9bc2-be0d92a3d457 http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 net.peer.name=maya-joey-18.s3.amazonaws.com rpc.system.name=aws-api tf_resource_type=aws_s3_bucket http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105137Z tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_rpc=ApplyResourceChange @module=aws http.request.header.accept_encoding=identity rpc.method=S3/GetBucketReplication @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 timestamp="2026-11-23T11:51:36.466+0100"
+2026-11-23T11:51:36.593+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.response.header.content_type=application/xml http.response.header.server=AmazonS3 http.response.header.x_amz_id_2="JfQBXfHZPRNdsXKgfwaF4rhW4eNJi2xV2jTii0q+YM1moqIe0p9gYm9zF5zdONzh2g7dYynxoX0=" http.status_code=404 rpc.method=S3/GetBucketReplication tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @module=aws aws.region=aws-global http.duration=127 http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" http.response.header.x_amz_request_id=2CQ6ADXCQK7K15F6 tf_resource_type=aws_s3_bucket
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Error><Code>ReplicationConfigurationNotFoundError</Code><Message>The replication configuration was not found</Message><BucketName>maya-joey-18</BucketName><RequestId>2CQ6ADXCQK7K15F6</RequestId><HostId>JfQBXfHZPRNdsXKgfwaF4rhW4eNJi2xV2jTii0q+YM1moqIe0p9gYm9zF5zdONzh2g7dYynxoX0=</HostId></Error>
+   tf_aws.signing_region="" tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:36.593+0100"
+2026-11-23T11:51:36.594+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: 2CQ6ADXCQK7K15F6, HostID: JfQBXfHZPRNdsXKgfwaF4rhW4eNJi2xV2jTii0q+YM1moqIe0p9gYm9zF5zdONzh2g7dYynxoX0=, api error ReplicationConfigurationNotFoundError: The replication configuration was not found: rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global rpc.method=S3/GetBucketReplication timestamp="2026-11-23T11:51:36.593+0100"
+2026-11-23T11:51:36.594+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: net.peer.name=maya-joey-18.s3.amazonaws.com tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.request.header.amz_sdk_request="attempt=1; max=25" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" rpc.method=S3/GetBucketEncryption rpc.system.name=aws-api http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105136Z aws.region=aws-global http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.url=https://maya-joey-18.s3.amazonaws.com/?encryption= tf_provider_addr=registry.terraform.io/hashicorp/aws http.method=GET tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.request.body="" http.request.header.accept_encoding=identity http.request.header.amz_sdk_invocation_id=a0528637-1435-4ccc-b8a1-afa5931f6447 timestamp="2026-11-23T11:51:36.594+0100"
+2026-11-23T11:51:36.733+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.response.header.x_amz_request_id=2CQ2NH9P610EFGY9 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" @module=aws
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Rule><BucketKeyEnabled>false</BucketKeyEnabled><ApplyServerSideEncryptionByDefault><SSEAlgorithm>AES256</SSEAlgorithm></ApplyServerSideEncryptionByDefault><BlockedEncryptionTypes><EncryptionType>SSE-C</EncryptionType></BlockedEncryptionTypes></Rule></ServerSideEncryptionConfiguration>
+   http.status_code=200 rpc.method=S3/GetBucketEncryption @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.region=aws-global http.duration=139 http.response.header.date="Mon, 23 Nov 2026 10:51:37 GMT" http.response.header.server=AmazonS3 tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.x_amz_id_2="14grygRQzYvNA/Nk0RaY5jaetUTt7yH+KDeleInuzY5dUDJre7ycp0L2Use9V3OAFY50+p5DjaY=" rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-11-23T11:51:36.733+0100"
+2026-11-23T11:51:36.746+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: @module=aws http.request.body="" rpc.method=S3/GetObjectLockConfiguration rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 aws.region=aws-global tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.method=GET http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.url=https://maya-joey-18.s3.amazonaws.com/?object-lock= http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" http.request.header.accept_encoding=identity http.request.header.amz_sdk_invocation_id=2c9afab0-8481-4705-bb84-1ed93d959040 http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105137Z net.peer.name=maya-joey-18.s3.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_resource_type=aws_s3_bucket timestamp="2026-11-23T11:51:36.734+0100"
+2026-11-23T11:51:36.870+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_s3_bucket http.duration=136 http.response.header.date="Mon, 23 Nov 2026 10:51:36 GMT" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.response.header.content_type=application/xml http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=2CQEV9VPNN8JME2K rpc.method=S3/GetObjectLockConfiguration tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.response.header.x_amz_id_2="IRnbF7MRsZyZI5jezMy4rYFXS8qxjjyacec+YWRVkj8vm6A7d+RkIw27N+RUvRuwCmo/F+2Zo7Q=" rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 http.status_code=404 aws.region=aws-global
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Error><Code>ObjectLockConfigurationNotFoundError</Code><Message>Object Lock configuration does not exist for this bucket</Message><BucketName>maya-joey-18</BucketName><RequestId>2CQEV9VPNN8JME2K</RequestId><HostId>IRnbF7MRsZyZI5jezMy4rYFXS8qxjjyacec+YWRVkj8vm6A7d+RkIw27N+RUvRuwCmo/F+2Zo7Q=</HostId></Error>
+   timestamp="2026-11-23T11:51:36.870+0100"
+2026-11-23T11:51:36.874+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: request failed with unretryable error https response error StatusCode: 404, RequestID: 2CQEV9VPNN8JME2K, HostID: IRnbF7MRsZyZI5jezMy4rYFXS8qxjjyacec+YWRVkj8vm6A7d+RkIw27N+RUvRuwCmo/F+2Zo7Q=, api error ObjectLockConfigurationNotFoundError: Object Lock configuration does not exist for this bucket: aws.region=aws-global rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws rpc.method=S3/GetObjectLockConfiguration tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 timestamp="2026-11-23T11:51:36.871+0100"
+2026-11-23T11:51:36.874+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: http.request.body="" http.request.header.amz_sdk_invocation_id=0a8f81c7-7f99-47ab-bd5c-6f01f5d58ce3 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=*****" http.request.header.x_amz_date=20261123T105136Z http.url=https://maya-joey-18.s3.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.114.5 m/n" tf_aws.sdk=aws-sdk-go-v2 http.method=HEAD http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 net.peer.name=maya-joey-18.s3.amazonaws.com rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 aws.s3.bucket=maya-joey-18 rpc.method=S3/HeadBucket tf_aws.signing_region="" tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange @module=aws aws.region=aws-global http.request.header.accept_encoding=identity tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-11-23T11:51:36.871+0100"
+2026-11-23T11:51:36.989+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: http.response.header.date="Mon, 23 Nov 2026 10:51:37 GMT" http.response.header.x_amz_access_point_alias=false http.response.header.x_amz_bucket_arn=arn:aws:s3:::maya-joey-18 rpc.method=S3/HeadBucket tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" http.duration=117 http.response.body="" http.response.header.x_amz_id_2=Ujb/6QgdDKgjty0t7ibMoBvRR7LROfWVt1dFjQlldbu03sEtH5kupg3DwniMfoIgfgXo04iZhus= rpc.system.name=aws-api tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 tf_resource_type=aws_s3_bucket @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws aws.region=aws-global http.response.header.content_type=application/xml http.response.header.server=AmazonS3 http.response.header.x_amz_bucket_region=us-east-1 http.response.header.x_amz_request_id=2CQAHK2KP2PWW2V9 http.status_code=200 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange aws.s3.bucket=maya-joey-18 timestamp="2026-11-23T11:51:36.989+0100"
+2026-11-23T11:51:36.993+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Request Sent: tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_s3_bucket tf_rpc=ApplyResourceChange http.request.header.x_amz_account_id=721274598749 rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 @module=aws http.request.body="" http.request.header.amz_sdk_invocation_id=c8729371-238a-4ba5-b591-e9dc1143440b http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20261123T105136Z aws.region=us-east-1 http.method=GET http.request.header.amz_sdk_request="attempt=1; max=25" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.17.1 (+https://www.terraform.io) terraform-provider-aws/6.73.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.4 ua/2.1 os/macos lang/go#1.27.4 md/GOOS#darwin md/GOARCH#arm64 api/s3control#1.79.5 m/n" net.peer.name=721274598749.s3-control.us-east-1.amazonaws.com http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************YJO2/20261123/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;host;x-amz-account-id;x-amz-content-sha256;x-amz-date, Signature=*****" http.url="https://721274598749.s3-control.us-east-1.amazonaws.com/v20180820/tags/arn%3Aaws%3As3%3A%3A%3Amaya-joey-18" rpc.method="S3 Control/ListTagsForResource" timestamp="2026-11-23T11:51:36.993+0100"
+2026-11-23T11:51:37.468+0100 [DEBUG] provider.terraform-provider-aws_v6.73.0_x5: HTTP Response Received: tf_rpc=ApplyResourceChange
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <ListTagsForResourceResult xmlns="http://awss3control.amazonaws.com/doc/2018-08-20/"><Tags><Tag><Key>Environment</Key><Value>Dev</Value></Tag><Tag><Key>Name</Key><Value>My Bucket</Value></Tag></Tags></ListTagsForResourceResult>
+   http.response.header.server=AmazonS3 rpc.system.name=aws-api tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=ac4cdb42-ad26-d8c6-6103-21e5644d0252 http.response.header.x_amz_id_2="GPecc2lVAXFnBE8guIV2cdhU48I5Eutp3MaZ4n6f+K1FB9QYcRSiBLhYUlVw+OwallyrClkyIkiiC+vN5uwKLyMQfUbL8ywX" http.response.header.x_amz_request_id=N4Q8GA7AKSPFJNX4 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.76/logging/tf_logger.go:52 http.duration=474 http.response.header.date="Mon, 23 Nov 2026 10:51:38 GMT" tf_resource_type=aws_s3_bucket @module=aws aws.region=us-east-1 http.status_code=200 rpc.method="S3 Control/ListTagsForResource" timestamp="2026-11-23T11:51:37.468+0100"
+2026-11-23T11:51:37.485+0100 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2026-11-23T11:51:37.486+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-11-23T11:51:37.493+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.73.0/darwin_arm64/terraform-provider-aws_v6.73.0_x5 id=41299
+2026-11-23T11:51:37.493+0100 [DEBUG] provider: plugin exited
